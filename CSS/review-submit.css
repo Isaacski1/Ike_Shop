@@ -1,0 +1,138 @@
+/*  ==================== Primary Element ================ */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition: all 0.2s linear;
+    border: none;
+    outline: none;
+}
+
+body {
+    font-family: "Roboto Flex", sans-serif;
+    background-color: var(--deep-light-color);
+}
+
+/* Variables */
+:root {
+    --background-color: rgb(11, 130, 241);
+    --hover-color: rgb(0, 68, 255);
+    --hover-color-2: rgb(0, 0, 32);
+    --dark-color: #000;
+    --white-color: #fff;
+    --body-bg: #f9f9f9;
+    --deep-light-color: #efefef;
+    --light-dark-color: #2c2c2c;
+    --gray-color: gray;
+    --super-font-weight: 700;
+    --bolder-font-weight: 600;
+    --normal-font-weight: 500;
+    --light-font-weight: 400;
+    --box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.3);
+}
+
+a {
+    text-decoration: none !important;
+    /* display: block; */
+}
+
+li {
+    list-style: none !important;
+}
+
+p {
+    font-size: 1.5rem;
+    font-weight: var(--normal-font-weight);
+    color: var(--light-dark-color);
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-size: 1.5rem;
+    font-weight: var(--bolder-font-weight);
+    color: var(--dark-color);
+}
+
+html {
+    font-size: 55.5%;
+}
+
+/* Scroll bar Customization */
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--white-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--background-color);
+}
+
+.flex-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.flex-2 {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+}
+
+.mail-success {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.mail-box li {
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    border-radius: 50%;
+    border: 1px solid #bbb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    font-size: 5rem;
+    color: var(--background-color);
+    margin-bottom: 2rem;
+}
+
+.mail-box h1 {
+    font-size: 4rem;
+    font-weight: var(--super-font-weight);
+    color: #080;
+}
+
+.mail-box p {
+    font-size: 1.6rem;
+    font-weight: var(--normal-font-weight);
+    color: var(--gray-color);
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.mail-box a {
+    padding: 13px 50px;
+    font-size: 1.7rem;
+    font-weight: var(--normal-font-weight);
+    color: var(--white-color);
+    background: var(--background-color);
+    border-radius: 5px;
+}
+
+.mail-box a:hover {
+    background: var(--hover-color-2);
+}

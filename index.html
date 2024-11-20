@@ -1,0 +1,1282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IKE_SHOP | Isaacski Template</title>
+    <!-- ============= Fav Icon =============== -->
+    <link rel="shortcut icon" href="Images/fav_icon.png" type="image/x-icon" />
+    <!-- ================== Custom Style Sheet =================== -->
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <!-- ================== Media Query CDN =================== -->
+    <link rel="stylesheet" href="./CSS/responsive.css" />
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <!-- ============== CSS Bootstrap ================ -->
+    <link rel="stylesheet" href="./lib/bootstrap.min.css" />
+    <!-- =============== Owl Carousel ================ -->
+    <link rel="stylesheet" href="./lib/owl.carousel.min.css" />
+    <!-- =============== Owl Carousel Theme ================ -->
+    <link rel="stylesheet" href="./lib/owl.theme.default.min.css" />
+    <!-- ============== Bootstrap Icons CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <!-- ============= Google Fonts CDN ================== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <!-- =============== Box Icon CDN ============== -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+  </head>
+  <body>
+    <!-- ------------------- First Navigation Bar Start ---------------------- -->
+    <nav class="flex-2 first-nav_menu">
+      <div class="box-1 flex-1">
+        <div class="currency">
+          <select id="currency-select" name="currency">
+            <option>USD</option>
+            <option>EUR</option>
+            <option>CAD</option>
+            <option>QAR</option>
+            <option>GHS</option>
+          </select>
+        </div>
+        <div class="language">
+          <select name="language" id="language-select">
+            <option>ENGLISH</option>
+            <option>FRENCH</option>
+            <option>SPANISH</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="box-2">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about-us.html">About Us</a></li>
+          <li><a href="contact.html">Contact us</a></li>
+        </ul>
+      </div>
+
+      <div class="box-3 flex-1">
+        <p class="hello"><i class="bi bi-person"></i> <span>Hello</span></p>
+
+        <div class="logins flex-1">
+          <a href="login.html">Sign In</a>
+          <span class="bar"></span>
+          <a class="signup" href="register.html">Sign Up</a>
+        </div>
+      </div>
+    </nav>
+    <!-- ------------------- First Navigation Bar End ---------------------- -->
+
+    <!-- ------------------- Second Navigation Bar Start ------------------------ -->
+
+    <nav class="flex-2 second-nav_menu">
+      <a href="index.html" class="box-1">
+        <img src="Images/logo.png" class="logo" alt="Logo" />
+      </a>
+
+      <div class="box-2 flex-1">
+        <div class="box-2_1 flex-1 border">
+          <select class="home-category">
+            <option>All</option>
+            <option>Mobile Phones</option>
+            <option>Computers</option>
+            <option>Living Gadgets</option>
+            <option>Gaming</option>
+            <option>Speakers</option>
+            <option>Printers</option>
+            <option>Electric Gadgets</option>
+          </select>
+          <form class="search flex-2">
+            <input type="search" placeholder="Search" />
+            <button type="submit" class="search-icon">
+              <i class="bi bi-search flex-1"></i>
+            </button>
+          </form>
+        </div>
+
+        <div class="hotline-box flex-1">
+          <i class="bi bi-telephone border flex-1"></i>
+          <div class="hotline">
+            <h2>Hotline:</h2>
+            <a href="tel:+1 283 542 8655">+1 283 542 8655</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="box-3 flex-1">
+        <div class="heart border flex-1 position-relative">
+          <i class="bi bi-heart flex-1"></i>
+          <span class="flex-1">0</span>
+        </div>
+        <div class="cart-icon border flex-1 position-relative">
+          <i class="bi bi-cart flex-1"></i>
+          <span class="quantity flex-1">0</span>
+        </div>
+      </div>
+      <!-- ==================== Cart Section Start =================== -->
+      <div class="cart border">
+        <div class="cart-head">Your Cart Items</div>
+        <!-- Cart Items -->
+        <div class="cart-content">
+          <!-- <div class="cart-items">
+              <img
+                src="Images/Product/product-1.jpg"
+                class="cart-image border"
+              />
+              <div class="cart-details">
+                <h2 class="cart-item-name">Product Name</h2>
+                <p class="cart-price">$24.03</p>
+                <input type="number" value="1" class="cart-quantity" />
+              </div>
+              
+              <i class="bx bx-x remove-cart"></i>
+            </div> -->
+        </div>
+
+        <!-- Total  Price -->
+        <div class="total">
+          <h2>Total Price:</h2>
+          <p class="total-price">$0.00</p>
+        </div>
+
+        <!-- Checkout  -->
+
+        <button class="proceed-checkout-btn" onclick="checkoutBtn()">
+          Proceed to Checkout
+        </button>
+      </div>
+      <!-- ==================== Cart Section End =================== -->
+    </nav>
+    <!-- ------------------- Third Navigation Bar Start --------------------------- -->
+
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid navbar_box">
+        <div class="categories">
+          <div class="dropdown">
+            <a
+              class="btn btn-secondary"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <div class="box">
+                <i class="bi bi-list"></i>
+                <span>All Categories</span>
+              </div>
+            </a>
+
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" href="computer-1.html"
+                  >Computers & Laptops</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="electronic-1.html"
+                  >Refrigerator</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="phone-1.html">Mobile Phones</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="electronic-2.html"
+                  >Gaming Console</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="printer-1.html">Pirnters</a>
+              </li>
+              <li><a class="dropdown-item" href="camera-2.html">Cameras</a></li>
+              <li>
+                <a class="dropdown-item" href="television-2.html">Television</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="utensil-1.html"
+                  >Kitchen Gadgets</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="electronic-3.html"
+                  >Room Gadgets</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="electronic-4.html">VR Console</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="electronic-2.html"
+                  >Air Conditioners</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Home</a
+              >
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Pages
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="about-us.html">About Us</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="faq.html">FAQs</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="login.html">Login</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="register.html">Register</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="mail-sucess.html"
+                    >Mail Success</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="404.html">404 Error</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Shop
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="shop-grid.html">Shop Grid</a>
+                </li>
+
+                <li>
+                  <a class="dropdown-item" href="shop-single.html"
+                    >Shop Single</a
+                  >
+                </li>
+
+                <li>
+                  <a class="dropdown-item" href="checkout.html">Checkout</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="blog-single.html"
+                >Blog</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="contact.html"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="social-handles flex-1">
+          <li class="border">
+            <a href="#" title="Facebook"><i class="bx bxl-facebook"></i></a>
+          </li>
+          <li class="border">
+            <a href="#" title="Twitter"><i class="bx bxl-twitter"></i></a>
+          </li>
+          <li class="border">
+            <a href="#" title="Instagram"><i class="bx bxl-instagram"></i></a>
+          </li>
+          <li class="border">
+            <a href="#" title="Linkedin"><i class="bx bxl-linkedin"></i></a>
+          </li>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ------------------- Third Navigation Bar End --------------------------- -->
+
+    <!-- ------------------- Second Navigation Bar End ------------------------ -->
+
+    <!-- =================== Hero Section Start ===================== -->
+    <section class="container-fluid hero-container">
+      <div class="row hero-box">
+        <div class="col-lg-8 col-12 hero-1 p-3 position-relative">
+          <div class="row">
+            <div
+              class="hero-carousel owl-carousel .owl-theme position-relative"
+            >
+              <div class="hero-1-item">
+                <img
+                  src="Images/Hero/hero_slider-1.jpg"
+                  loading="lazy"
+                  alt=""
+                />
+                <div class="content">
+                  <h4>No restocking fee ($35 savings)</h4>
+                  <h1>M75 Sport Watch</h1>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quis obcaecati praesentium aut, reiciendis quidem repellat
+                    rem, itaque eaque magnam dolores ullam.
+                  </p>
+                  <div class="price flex-1">
+                    <span>New Only</span>
+                    <h1>$50.00</h1>
+                  </div>
+                  <a href="#" class="buy-btn">Buy Now</a>
+                </div>
+              </div>
+
+              <div class="hero-1-item">
+                <img
+                  src="Images/Hero/hero_slider-2.jpg"
+                  loading="lazy"
+                  alt=""
+                />
+                <div class="content">
+                  <h4>Big Sale Offer</h4>
+                  <h1>
+                    Get the Best Deal on <br />
+                    CCTV Camera
+                  </h1>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quis obcaecati praesentium aut, reiciendis quidem repellat
+                    rem, itaque eaque magnam dolores ullam.
+                  </p>
+                  <div class="price flex-1">
+                    <span>New Only</span>
+                    <h1>$150.00</h1>
+                  </div>
+                  <a href="#" class="buy-btn">Buy Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-12 hero-2 p-3 position-relative">
+          <div class="row">
+            <div
+              class="col-12 mb-4 col-lg-12 col-md-6 hero-2-box md-custom-padding position-relative"
+            >
+              <img src="Images/Hero/hero-img-1.jpg" loading="lazy" alt="" />
+              <div class="content">
+                <h4>New line required</h4>
+                <h1>iPhone 12 Pro Max</h1>
+                <h2>$250.00</h2>
+              </div>
+            </div>
+
+            <div
+              class="col-12 col-lg-12 col-md-6 hero-2-box-1 md-custom-padding position-relative"
+            >
+              <div class="img position-relative">
+                <img src="Images/Hero/hero-img-2.jpg" loading="lazy" alt="" />
+                <div class="layer"></div>
+              </div>
+              <div class="content">
+                <h4>Weekly Sale!</h4>
+                <p>Saving up to 50% off all online store items this week.</p>
+                <button class="hero-btn-2">Shop Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- =================== Hero Section End ===================== -->
+
+    <!-- =================== Features Section Start ================== -->
+    <section class="container feature-container">
+      <div class="headings text-center">
+        <h1>Featured Categories</h1>
+        <span class="bar-1"></span>
+      </div>
+      <p class="heading-info">
+        There are many varieties of Electronic Gadgets and it <br />
+        Accessories at <span>Ike_Shop</span>
+      </p>
+
+      <div class="row">
+        <div class="col-lg-4 col-md-6 col-sm-12 feature-row border">
+          <div class="product-content">
+            <h1>TV & Audio</h1>
+            <a href="television-1.html">Smart Television</a>
+            <a href="television-2.html">QLED Tv</a>
+            <a href="television-3.html">Audio</a>
+            <a href="electronic-1.html">Headphones</a>
+            <a href="shop-grid.html">View All</a>
+          </div>
+          <div class="product-image">
+            <img
+              src="Images/Television Accessories-1/pro-1.jpg"
+              loading="lazy"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-12 feature-row border">
+          <div class="product-content">
+            <h1>Desktop & Laptop</h1>
+            <a href="computer-1.html">Dell Desktop</a>
+            <a href="computer-2.html">Windows Pc</a>
+            <a href="computer-3.html">Mac Book</a>
+            <a href="computer-4.html">Samsung Laptop</a>
+            <a href="shop-grid.html">View All</a>
+          </div>
+          <div class="product-image">
+            <img
+              src="Images/Computers & Accessories/pro-3.jpg"
+              loading="lazy"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-12 feature-row border">
+          <div class="product-content">
+            <h1>CCTV Camera</h1>
+            <a href="camera-1.html">Video Cameras</a>
+            <a href="camera-2.html">Security Cameras</a>
+            <a href="camera-3.html">Wildlife Cameras</a>
+            <a href="camera-4.html">Sports Cameras</a>
+            <a href="shop-grid.html">View All</a>
+          </div>
+          <div class="product-image">
+            <img
+              src="Images/Features/fetured-item-3.png"
+              loading="lazy"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-12 feature-row border">
+          <div class="product-content">
+            <a href="camera-1.html">Video Cameras</a>
+            <a href="camera-2.html">Security Cameras</a>
+            <a href="camera-3.html">Wildlife Cameras</a>
+            <a href="camera-4.html">Sports Cameras</a>
+            <a href="shop-grid.html">View All</a>
+          </div>
+          <div class="product-image">
+            <img src="Images/Camera-1/pro-1.jpg" loading="lazy" alt="" />
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-12 feature-row border">
+          <div class="product-content">
+            <h1>Smart Phones</h1>
+            <a href="phone-1.html">Tesla Pi</a>
+            <a href="phone-2.html">iPhone</a>
+            <a href="phone-3.html">Samsung</a>
+            <a href="phone-4.html">Oppo</a>
+            <a href="shop-grid.html">View All</a>
+          </div>
+          <div class="product-image">
+            <img
+              src="Images/Features/fetured-item-5.png"
+              loading="lazy"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-12 feature-row border">
+          <div class="product-content">
+            <h1>Electronics</h1>
+            <a href="electronic-1.html">Consoles</a>
+            <a href="electronic-2.html">Washing Machine</a>
+            <a href="electronic-3.html">Laptops</a>
+            <a href="electronic-4.html">VR Devices</a>
+            <a href="shop-grid.html">View All</a>
+          </div>
+          <div class="product-image">
+            <img src="Images/Electronic-1/pro-6.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- =================== Features Section End ================== -->
+
+    <!-- =================== Trending Products Section Start ===================== -->
+    <section class="container-fluid trending-container">
+      <div class="headings text-center">
+        <h1>Trending Products</h1>
+        <span class="bar-1"></span>
+      </div>
+      <p class="heading-info">
+        There are many varieties of Electronic Gadgets and it <br />
+        Accessories at <span>Ike_Shop</span>
+      </p>
+
+      <div class="row">
+        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 trending-row">
+          <div class="trending-box trending-cont p-2 position-relative">
+            <img src="Images/Product/product-1.jpg" class="product-image" />
+            <h4>Watches</h4>
+            <h1 class="product-name">Xiaomi Mi Band 5</h1>
+            <div class="rate">
+              <div class="star">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-half"></i>
+              </div>
+              <p>4.0 Review(s)</p>
+            </div>
+            <p class="product-price">$30.00</p>
+            <i class="bi bi-cart4 add-cart"><span>Add Cart</span></i>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 trending-row">
+          <div class="trending-box trending-cont p-2 position-relative">
+            <div class="discount">-20%</div>
+            <img src="Images/Product/product-2.jpg" class="product-image" />
+            <h4>Speaker</h4>
+            <h1 class="product-name">Big Power Sound Speaker</h1>
+            <div class="rate">
+              <div class="star">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-half"></i>
+              </div>
+              <p>4.0 Review(s)</p>
+            </div>
+            <div class="price">
+              <p class="product-price">$120.00</p>
+              <del>$140.00</del>
+            </div>
+            <i class="bi bi-cart4 add-cart"><span>Add Cart</span></i>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 trending-row">
+          <div class="trending-box trending-cont p-2 position-relative">
+            <img src="Images/Product/product-3.jpg" class="product-image" />
+            <h4>Camera</h4>
+            <h1 class="product-name">Wifi Security Camera</h1>
+            <div class="rate">
+              <div class="star">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-half"></i>
+                <i class="bi bi-star"></i>
+              </div>
+              <p>3.7 Review(s)</p>
+            </div>
+            <p class="product-price">$59.99</p>
+            <i class="bi bi-cart4 add-cart"><span>Add Cart</span></i>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 trending-row">
+          <div class="trending-box trending-cont p-2 position-relative">
+            <div class="new">NEW</div>
+            <img src="Images/Product/product-4.jpg" class="product-image" />
+            <h4>Phones</h4>
+            <h1 class="product-name">iPhone 6s Plus</h1>
+            <div class="rate">
+              <div class="star">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-half"></i>
+              </div>
+              <p>4.2 Review(s)</p>
+            </div>
+            <p class="product-price">$25.00</p>
+            <i class="bi bi-cart4 add-cart"><span>Add Cart</span></i>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 trending-row">
+          <div class="trending-box trending-cont p-2 position-relative">
+            <div class="new">NEW</div>
+            <img src="Images/Product/product-5.jpg" class="product-image" />
+            <h4>Headphones</h4>
+            <h1 class="product-name">Wireless Headphones</h1>
+            <div class="rate">
+              <div class="star">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star"></i>
+              </div>
+              <p>4.5 Review(s)</p>
+            </div>
+            <p class="product-price">$45.50</p>
+            <i class="bi bi-cart4 add-cart"><span>Add Cart</span></i>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 trending-row">
+          <div class="trending-box trending-cont p-2 position-relative">
+            <img src="Images/Product/product-6.jpg" class="product-image" />
+            <h4>Speaker</h4>
+            <h1 class="product-name">Mini Bluetooth Speaker</h1>
+            <div class="rate">
+              <div class="star">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-half"></i>
+                <i class="bi bi-star"></i>
+                <i class="bi bi-star"></i>
+              </div>
+              <p>2.6 Review(s)</p>
+            </div>
+            <p class="product-price">$15.75</p>
+            <i class="bi bi-cart4 add-cart"><span>Add Cart</span></i>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 trending-row">
+          <div class="trending-box trending-cont p-2 position-relative">
+            <div class="discount">-15%</div>
+            <img src="Images/Product/product-7.jpg" class="product-image" />
+            <h4>Headphones</h4>
+            <h1 class="product-name">PX7 Wireless Headphones</h1>
+            <div class="rate">
+              <div class="star">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <p>5.0 Review(s)</p>
+            </div>
+            <div class="price">
+              <p class="product-price">$65.25</p>
+              <del>$80.00</del>
+            </div>
+            <i class="bi bi-cart4 add-cart"><span>Add Cart</span></i>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 trending-row">
+          <div class="trending-box trending-cont p-2 position-relative">
+            <img src="Images/Product/product-8.jpg" class="product-image" />
+            <h4>Laptop</h4>
+            <h1 class="product-name">Apple MacBook Air</h1>
+            <div class="rate">
+              <div class="star">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <p>5.0 Review(s)</p>
+            </div>
+            <p class="product-price">$250.00</p>
+            <i class="bi bi-cart4 add-cart"><span>Add Cart</span></i>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- =================== Trending Products Section End ===================== -->
+
+    <!-- =================== Banner Section Start ===================== -->
+    <section class="container banner-container">
+      <div class="row">
+        <div class="col-lg col-12 p-0 border banner-box position-relative">
+          <img src="Images/Banner/banner-1-bg.jpg" alt="" />
+          <div class="content">
+            <h1>Smart Watch 2.0</h1>
+            <p>
+              Space Gray Aluminium Case with <br />Black/Volt Real Sports Band
+            </p>
+            <a href="#">View Details</a>
+          </div>
+        </div>
+        <div class="col-lg col-12 p-0 border banner-box position-relative">
+          <img src="Images/Banner/banner-2-bg.jpg" alt="" />
+          <div class="content">
+            <h1>Smart Headphone 2.0</h1>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur<br />
+              adipisicing elit. Mollitia, quae?
+            </p>
+            <a href="#">View Details</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- =================== Banner Section End ===================== -->
+
+    <!-- =================== Special Offer Section Start =====================  -->
+    <section class="container-fluid special-offer-container">
+      <div class="headings text-center">
+        <h1>Special Offer</h1>
+        <span class="bar-1"></span>
+      </div>
+      <p class="heading-info">
+        There are many varieties of Electronic Gadgets and it <br />
+        Accessories at <span>Ike_Shop</span>
+      </p>
+
+      <div class="row py-5">
+        <div class="col-lg-8 offer-cont-1">
+          <div class="offer-cont">
+            <div class="offer-product trending-cont border">
+              <div class="offer-box p-4 position-relative">
+                <div class="img">
+                  <img
+                    src="Images/Product/product-2.jpg"
+                    class="product-image"
+                  />
+                </div>
+                <h4>Speaker</h4>
+                <h1 class="product-name">Big Power Sound Speaker</h1>
+                <div class="rate">
+                  <div class="star">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                  </div>
+                  <p>4.0 Review(s)</p>
+                </div>
+                <p class="product-price">$120.00</p>
+                <i class="bi bi-cart4 add-cart offer-cart-icon"
+                  ><span>Add Cart</span></i
+                >
+              </div>
+            </div>
+            <div class="offer-product trending-cont border">
+              <div class="offer-box p-4 position-relative">
+                <div class="img">
+                  <img
+                    src="Images/Product/product-8.jpg"
+                    class="product-image"
+                  />
+                </div>
+                <h4>Laptops</h4>
+                <h1 class="product-name">Apple MacBook Air</h1>
+                <div class="rate">
+                  <div class="star">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                  </div>
+                  <p>4.0 Review(s)</p>
+                </div>
+                <p class="product-price">$250.00</p>
+                <i class="bi bi-cart4 add-cart offer-cart-icon"
+                  ><span>Add Cart</span></i
+                >
+              </div>
+            </div>
+
+            <div class="offer-product trending-cont border">
+              <div class="offer-box p-4 position-relative">
+                <div class="img">
+                  <img
+                    src="Images/Product/product-3.jpg"
+                    class="product-image"
+                  />
+                </div>
+                <h4>Camera</h4>
+                <h1 class="product-name">Wifi Security Camera</h1>
+                <div class="rate">
+                  <div class="star">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                  </div>
+                  <p>4.0 Review(s)</p>
+                </div>
+                <p class="product-price">$59.99</p>
+                <i class="bi bi-cart4 add-cart offer-cart-icon"
+                  ><span>Add Cart</span></i
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="row py-5">
+            <div class="col-lg-12 offer-banner position-relative">
+              <img src="Images/Banner/banner-3-bg.jpg" alt="" />
+              <div class="content">
+                <h1>Samsung NoteBook 9</h1>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Molestiae, quis?
+                </p>
+                <h2>$450.00</h2>
+                <a href="#">Shop Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 p-4 offer-cont-2">
+          <div class="offer-box-2">
+            <div class="img position-relative">
+              <img src="Images/offer-image.jpg" alt="" />
+              <div class="offer-discount">-50%</div>
+            </div>
+            <div class="content">
+              <h1>Bluetooth Headphone</h1>
+              <div class="rate">
+                <div class="star">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </div>
+                <p>5.0 Review(s)</p>
+              </div>
+              <div class="price">
+                <h1>$100.00</h1>
+                <del>$200.00</del>
+              </div>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet
+                ad nihil ducimus quam, eos repudiandae.
+              </p>
+              <a href="#">Order Now</a>
+            </div>
+            <div class="offer-box-2-date p-4 border">
+              <p>3 days left for the offer to end!</p>
+              <div class="offer-box-2-date-container">
+                <span id="hrs">00</span>
+                <span>:</span>
+                <span id="min">00</span>
+                <span>:</span>
+                <span id="sec">00</span>
+              </div>
+            </div>
+
+            <div class="py-5 offer-video">
+              <video
+                src="Images/offer-video.mp4"
+                type="video/mp4"
+                muted
+                autoplay
+                loop
+              ></video>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- =================== Special Offer Section End =====================  -->
+
+    <!-- =================== Arrival section Start ========================= -->
+    <section class="container-fluid arrival-container">
+      <div class="row">
+        <div class="col-lg-4 py-5 arrival-box">
+          <div class="arrival-head">
+            <h1>Best Sellers</h1>
+            <span class="bar-2"></span>
+          </div>
+          <div class="arrival-cont">
+            <img src="Images/Arrival/01.jpg" alt="Arrival Image" />
+            <div class="content">
+              <a href="#">GoPro Hero 4 Silver</a>
+              <p>$230.00</p>
+            </div>
+          </div>
+          <div class="arrival-cont">
+            <img src="Images/Arrival/02.jpg" alt="Arrival Image" />
+            <div class="content">
+              <a href="#">Pulo Sounds Labs Bt2200</a>
+              <p>$93.57</p>
+            </div>
+          </div>
+          <div class="arrival-cont">
+            <img src="Images/Arrival/03.jpg" alt="Arrival Image" />
+            <div class="content">
+              <a href="#">Hp Office Jet Pro 870</a>
+              <p>$150.00</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 py-5 arrival-box">
+          <div class="arrival-head">
+            <h1>New Arrivals</h1>
+            <span class="bar-2"></span>
+          </div>
+          <div class="arrival-cont">
+            <img src="Images/Arrival/04.jpg" alt="Arrival Image" />
+            <div class="content">
+              <a href="#">Canon EOS M50 Mirrorless Camera</a>
+              <p>$135.00</p>
+            </div>
+          </div>
+          <div class="arrival-cont">
+            <img src="Images/Arrival/05.jpg" alt="Arrival Image" />
+            <div class="content">
+              <a href="#">iPhone X 256 GB Space Gray</a>
+              <p>$160.00</p>
+            </div>
+          </div>
+          <div class="arrival-cont">
+            <img src="Images/Arrival/06.jpg" alt="Arrival Image" />
+            <div class="content">
+              <a href="#">Microsoft XBox One S</a>
+              <p>$250.00</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 py-5 arrival-box">
+          <div class="arrival-head">
+            <h1>Top Rated</h1>
+            <span class="bar-2"></span>
+          </div>
+          <div class="arrival-cont">
+            <img src="Images/Arrival/07.jpg" alt="Arrival Image" />
+            <div class="content">
+              <a href="#">Samsung Gear 360 VR Camera</a>
+              <p>$89.99</p>
+            </div>
+          </div>
+          <div class="arrival-cont">
+            <img src="Images/Arrival/08.jpg" alt="Arrival Image" />
+            <div class="content">
+              <a href="#">Samsung Galaxy S9+ 64Gb</a>
+              <p>$75.00</p>
+            </div>
+          </div>
+          <div class="arrival-cont">
+            <img src="Images/Arrival/09.jpg" alt="Arrival Image" />
+            <div class="content">
+              <a href="#">Zeus Bluetooth Headphones</a>
+              <p>$30.00</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- =================== Arrival section End ========================= -->
+
+    <!-- =================== Popular Brand Section Start ================== -->
+    <section class="container-fluid popular-brand-container">
+      <h1>Popular Brand</h1>
+      <div class="row" style="margin-top: 50px">
+        <div class="col-12">
+          <div class="brand-carousel owl-carousel brand-box border">
+            <div class="brand-item">
+              <img src="Images/Brand/brand-1.png" alt="" />
+            </div>
+            <div class="brand-item">
+              <img src="Images/Brand/brand-2.png" alt="" />
+            </div>
+            <div class="brand-item">
+              <img src="Images/Brand/brand-3.png" alt="" />
+            </div>
+            <div class="brand-item">
+              <img src="Images/Brand/brand-4.png" alt="" />
+            </div>
+            <div class="brand-item">
+              <img src="Images/Brand/brand-5.png" alt="" />
+            </div>
+            <div class="brand-item">
+              <img src="Images/Brand/brand-6.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- =================== Popular Brand Section End ================== -->
+
+    <!-- =================== Our Latest News Section Start ================= -->
+    <section class="container-fluid latest-news">
+      <div class="headings text-center">
+        <h1>Our Latest News</h1>
+        <span class="bar-1"></span>
+      </div>
+      <p class="heading-info">
+        There are many varieties of Electronic Gadgets and it <br />
+        Accessories at <span>Ike_Shop</span>
+      </p>
+
+      <div class="latest-news-container">
+        <div class="latest-news-row p-3 pb-5 border">
+          <div class="latest-news-product">
+            <div class="latest-mews__img">
+              <img
+                src="Images/Blog/blog-1.jpg"
+                alt="Latest News Blog Image 1"
+              />
+            </div>
+            <div class="content">
+              <h4>E-commerce</h4>
+              <a href="#">What information is needed for shipping?</a>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Voluptatem ducimus similique dolore dolor corporis id alias
+                nostrum in, ab tempore.
+              </p>
+              <a href="#" class="learn-more_btn">Learn More</a>
+            </div>
+          </div>
+        </div>
+        <div class="latest-news-row p-3 pb-5 border">
+          <div class="latest-news-product">
+            <div class="latest-mews__img">
+              <img
+                src="Images/Blog/blog-2.jpg"
+                alt="Latest News Blog Image 1"
+              />
+            </div>
+            <div class="content">
+              <h4>Gaming</h4>
+              <a href="#">Interest fact about gaming console.</a>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Voluptatem ducimus similique dolore dolor corporis id alias
+                nostrum in, ab tempore.
+              </p>
+              <a href="#" class="learn-more_btn">Learn More</a>
+            </div>
+          </div>
+        </div>
+        <div class="latest-news-row p-3 pb-5 border">
+          <div class="latest-news-product">
+            <div class="latest-mews__img">
+              <img
+                src="Images/Blog/blog-3.jpg"
+                alt="Latest News Blog Image 1"
+              />
+            </div>
+            <div class="content">
+              <h4>Electronics</h4>
+              <a href="#"
+                >Electronics, instrumentation and control engineering</a
+              >
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Voluptatem ducimus similique dolore dolor corporis id alias
+                nostrum in, ab tempore.
+              </p>
+              <a href="#" class="learn-more_btn">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- =================== Our Latest News Section End ================= -->
+
+    <!-- =================== Our Plans Section Start ======================= -->
+    <section class="container-fluid our-plans">
+      <div class="row mt-5 p-5">
+        <div class="col-lg col-md-5 col-12 ms-auto m-4 our-plans-box">
+          <i class="bi bi-truck"></i>
+          <h1>Free Shipping</h1>
+          <p>On order over $200</p>
+        </div>
+        <div class="col-lg col-md-5 col-12 ms-auto m-4 our-plans-box">
+          <i class="bi bi-chat-right-text"></i>
+          <h1>24/7 Support</h1>
+          <p>Live Chat Or Call</p>
+        </div>
+        <div class="col-lg col-md-5 col-12 ms-auto m-4 our-plans-box">
+          <i class="bi bi-credit-card"></i>
+          <h1>Online Payment</h1>
+          <p>Secure Payment Services</p>
+        </div>
+        <div class="col-lg col-md-5 col-12 ms-auto m-4 our-plans-box">
+          <i class="bi bi-arrow-repeat"></i>
+          <h1>Easy Return</h1>
+          <p>Hassle Free Shopping</p>
+        </div>
+      </div>
+    </section>
+    <!-- =================== Our Plans Section End ======================= -->
+
+    <!-- ================== Footer Section Start ========================== -->
+    <section class="container-fluid footer-container">
+      <div class="first-footer-cont">
+        <div class="first-footer-box">
+          <a href="index.html"
+            ><img
+              src="Images/footer-logo.png"
+              alt="Footer Logo"
+              class="footer-logo"
+          /></a>
+          <div class="sub-cont">
+            <div class="subscribe-info text-center">
+              <h1>Subscribe to our Newsletter</h1>
+              <p>Get all the latest information, sales and offers.</p>
+            </div>
+            <div class="subscribe-form">
+              <form action="">
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Email address here..."
+                  required
+                />
+                <button type="submit" class="sub-send flex-1">
+                  <i class="bi bi-send-fill"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="second-footer-cont">
+          <div class="second-footer-box">
+            <div class="second-footer-box-heading">
+              <h1>Get in touch with us</h1>
+              <span class="bar-3"></span>
+            </div>
+            <p>Phone: (+233) 549 175 604</p>
+            <p>Monday-Friday: 9:00am - 5:00pm</p>
+            <p>Saturday: 9:00am - 3:00pm</p>
+            <p>isaacskikrams@gmail.com</p>
+          </div>
+
+          <div class="second-footer-box" style="width: 300px">
+            <div class="second-footer-box-heading">
+              <h1>Get in touch with us</h1>
+              <span class="bar-3"></span>
+            </div>
+            <a href="#" class="cont-1">
+              <i class="bi bi-apple"></i>
+              <div class="box">
+                <p>Download on the</p>
+                <h1>Apple Store</h1>
+              </div>
+            </a>
+            <a href="#" class="cont-1">
+              <i class="bi bi-google-play"></i>
+              <div class="box">
+                <p>Download on the</p>
+                <h1>Google Play</h1>
+              </div>
+            </a>
+          </div>
+
+          <div class="second-footer-box" style="width: 300px">
+            <div class="second-footer-box-heading">
+              <h1>Information</h1>
+              <span class="bar-3"></span>
+            </div>
+            <a href="#">About Us</a>
+            <a href="#">Contact Us</a>
+            <a href="#">Download</a>
+            <a href="#">Site map</a>
+            <a href="#">FAQS</a>
+          </div>
+
+          <div class="second-footer-box" style="width: 300px">
+            <div class="second-footer-box-heading">
+              <h1>Shop Department</h1>
+              <span class="bar-3"></span>
+            </div>
+            <a href="#">Computers & Accessories</a>
+            <a href="#">Smart Phones & Tablets</a>
+            <a href="#">TV, Video & Sounds</a>
+            <a href="#">Cameras, Photo & Video</a>
+            <a href="#">Headphones</a>
+          </div>
+        </div>
+        <div class="third-footer-box">
+          <div class="box-1">
+            <p>We accept:</p>
+            <img src="Images/credit-cards-footer.png" alt="" />
+          </div>
+          <div class="box-2 text-center">
+            <p>Designed and Developed by:</p>
+            <a href="#">Isaacski Krams</a>
+          </div>
+          <div class="box-3">
+            <p>Follow us on:</p>
+            <div class="social-handles-2">
+              <a
+                href="https://www.facebook.com/isaacski.krams.3"
+                target="_blank"
+                title="Facebook"
+                ><i class="bi bi-facebook"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/isaacski.2001"
+                target="_blank"
+                title="Linkedin"
+                ><i class="bi bi-linkedin"></i
+              ></a>
+              <a
+                href="https://www.youtube.com/Isaacski"
+                target="_blank"
+                title="YouTube"
+                ><i class="bi bi-youtube"></i
+              ></a>
+              <a
+                href="https://www.github.com/Isaacski1"
+                target="_blank"
+                title="Github"
+                ><i class="bi bi-github"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ================== Footer Section End ========================== -->
+    <!-- Go up button Start -->
+    <a href="#top" class="go-top" data-go-top>
+      <i class="bx bxs-up-arrow"></i>
+    </a>
+    <!-- Go up button End -->
+
+    <!-- =============== Bootstrap JS CDN ============ -->
+    <script src="./lib/bootstrap.bundle.js"></script>
+    <!-- =============== jQuery CDN Link ============= -->
+    <script src="lib/jquery.js"></script>
+
+    <!-- =============== Owl Carousel JS CDN ============ -->
+    <script src="./lib/owl.carousel.min.js"></script>
+
+    <!-- ============== Script JS Link ============= -->
+    <script src="./JS/script.js"></script>
+    <script src="./JS/checkout.js"></script>
+  </body>
+</html>

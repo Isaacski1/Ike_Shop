@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shop Single | Ike_Shop</title>
+  <!-- ============= Fav Icon =============== -->
+  <link rel="shortcut icon" href="Images/fav_icon.png" type="image/x-icon" />
+  <!-- ================== Custom Style Sheet =================== -->
+  <link rel="stylesheet" href="./CSS/shop-single.css" />
+  <!-- ================== Media Query CDN =================== -->
+  <link rel="stylesheet" href="./CSS/responsive.css" />
+
+  <!-- ============== CSS Bootstrap ================ -->
+  <link rel="stylesheet" href="./lib/bootstrap.min.css" />
+  <!-- =============== Owl Carousel ================ -->
+  <link rel="stylesheet" href="./lib/owl.carousel.min.css" />
+  <!-- =============== Owl Carousel Theme ================ -->
+  <link rel="stylesheet" href="./lib/owl.theme.default.min.css" />
+  <!-- ============== Bootstrap Icons CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <!-- ============= Google Fonts CDN ================== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap"
+    rel="stylesheet" />
+  <!-- =============== Box Icon CDN ============== -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
+</head>
+
+<body>
+  <!-- ------------------- First Navigation Bar Start ---------------------- -->
+  <nav class="flex-2 first-nav_menu">
+    <div class="box-1 flex-1">
+      <div class="currency">
+        <select id="currency-select" name="currency">
+          <option>USD</option>
+          <option>EUR</option>
+          <option>CAD</option>
+          <option>QAR</option>
+          <option>GHS</option>
+        </select>
+      </div>
+      <div class="language">
+        <select name="language" id="language-select">
+          <option>ENGLISH</option>
+          <option>FRENCH</option>
+          <option>SPANISH</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="box-2">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about-us.html">About Us</a></li>
+        <li><a href="contact.html">Contact us</a></li>
+      </ul>
+    </div>
+
+    <div class="box-3 flex-1">
+      <p class="hello"><i class="bi bi-person"></i> <span>Hello</span></p>
+
+      <div class="logins flex-1">
+        <a href="login.html">Sign In</a>
+        <span class="bar"></span>
+        <a class="signup" href="register.html">Sign Up</a>
+      </div>
+    </div>
+  </nav>
+  <!-- ------------------- First Navigation Bar End ---------------------- -->
+
+  <!-- ------------------- Second Navigation Bar Start ------------------------ -->
+  <nav class="flex-2 second-nav_menu">
+    <a href="index.html" class="box-1">
+      <img src="Images/logo.png" class="logo" alt="Logo" />
+    </a>
+
+    <div class="box-2 flex-1">
+      <div class="box-2_1 flex-1 border">
+        <select class="home-category">
+          <option>All</option>
+          <option>Mobile Phones</option>
+          <option>Computers</option>
+          <option>Living Gadgets</option>
+          <option>Gaming</option>
+          <option>Speakers</option>
+          <option>Printers</option>
+          <option>Electric Gadgets</option>
+        </select>
+        <form class="search flex-2">
+          <input type="search" placeholder="Search" />
+          <button type="submit" class="search-icon">
+            <i class="bi bi-search flex-1"></i>
+          </button>
+        </form>
+      </div>
+
+      <div class="hotline-box flex-1">
+        <i class="bi bi-telephone border flex-1"></i>
+        <div class="hotline">
+          <h2>Hotline:</h2>
+          <p>(+233) 549 175 604</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="box-3 flex-1">
+      <div class="heart border flex-1 position-relative">
+        <i class="bi bi-heart flex-1"></i>
+        <span class="flex-1">0</span>
+      </div>
+      <div class="cart-icon border flex-1 position-relative">
+        <i class="bi bi-cart flex-1"></i>
+        <span class="quantity flex-1">0</span>
+      </div>
+    </div>
+    <!-- ==================== Cart Section Start =================== -->
+    <div class="cart border">
+      <div class="cart-head">Your Cart Items</div>
+      <!-- Cart Items -->
+      <div class="cart-content">
+        <!-- <div class="cart-items">
+              <img
+                src="Images/Product/product-1.jpg"
+                class="cart-image border"
+              />
+              <div class="cart-details">
+                <h2 class="cart-item-name">Product Name</h2>
+                <p class="cart-price">$24.03</p>
+                <input type="number" value="1" class="cart-quantity" />
+              </div>
+              
+              <i class="bx bx-x remove-cart"></i>
+            </div> -->
+      </div>
+
+      <!-- Total  Price -->
+      <div class="total">
+        <h2>Total Price:</h2>
+        <p class="total-price">$0.00</p>
+      </div>
+
+      <!-- Checkout  -->
+      <button class="checkout-btn">Checkout</button>
+    </div>
+    <!-- ==================== Cart Section End =================== -->
+  </nav>
+  <!-- ------------------- Third Navigation Bar Start --------------------------- -->
+
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid navbar_box">
+      <div class="categories">
+        <div class="dropdown">
+          <a class="btn btn-secondary" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <div class="box">
+              <i class="bi bi-list"></i>
+              <span>All Categories</span>
+            </div>
+          </a>
+
+          <ul class="dropdown-menu">
+            <li>
+                <a class="dropdown-item" href="computer-1.html">Computers & Laptops</a>
+              </li>
+              <li><a class="dropdown-item" href="electronic-1.html">Refrigerator</a></li>
+              <li><a class="dropdown-item" href="phone-1.html">Mobile Phones</a></li>
+              <li><a class="dropdown-item" href="electronic-2.html">Gaming Console</a></li>
+              <li><a class="dropdown-item" href="printer-1.html">Pirnters</a></li>
+              <li><a class="dropdown-item" href="camera-2.html">Cameras</a></li>
+              <li><a class="dropdown-item" href="television-2.html">Television</a></li>
+              <li><a class="dropdown-item" href="utensil-1.html">Kitchen Gadgets</a></li>
+              <li><a class="dropdown-item" href="electronic-3.html">Room Gadgets</a></li>
+              <li><a class="dropdown-item" href="electronic-4.html">VR Console</a></li>
+              <li><a class="dropdown-item" href="electronic-2.html">Air Conditioners</a></li>
+          </ul>
+        </div>
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Pages
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item active" href="#">About Us</a></li>
+              <li>
+                <a class="dropdown-item" href="faq.html">FAQs</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="login.html">Login</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="register.html">Register</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="mail-sucess.html">Mail Success</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="404.html">404 Error</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Shop
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" href="shop-grid.html">Shop Grid</a>
+              </li>
+              
+              <li>
+                <a class="dropdown-item" href="shop-single.html">Shop Single</a>
+              </li>
+
+              <li>
+                <a class="dropdown-item" href="checkout.html">Checkout</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="blog-single.html"
+                >Blog</a
+              >
+            </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="contact.html">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+      <div class="social-handles flex-1">
+        <li class="border">
+          <a href="#" title="Facebook"><i class="bx bxl-facebook"></i></a>
+        </li>
+        <li class="border">
+          <a href="#" title="Twitter"><i class="bx bxl-twitter"></i></a>
+        </li>
+        <li class="border">
+          <a href="#" title="Instagram"><i class="bx bxl-instagram"></i></a>
+        </li>
+        <li class="border">
+          <a href="#" title="Linkedin"><i class="bx bxl-linkedin"></i></a>
+        </li>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ------------------- Fourth Navigation Bar Start ------------------------- -->
+  <nav class="fourth-nav-menu flex-2 border">
+    <h1>Shop Single</h1>
+    <div class="box">
+      <a href="index.html"><i class="bi bi-house-fill"></i> <span>Home</span></a>
+      <span class="r-arrow">></span>
+      <a href="index.html"><i class="bi bi-house-fill"></i> <span>Shop</span></a>
+      <span class="r-arrow">></span>
+      <p>Shop Single</p>
+    </div>
+  </nav>
+  <!-- ------------------- Second Navigation Bar End ------------------------ -->
+  <!-- ------------------- Third Navigation Bar End --------------------------- -->
+  <!-- ------------------- Fourth Navigation Bar End ------------------------- -->
+
+  <!-- ====================== Container one Section Start ======================== -->
+  <section class="container container-one">
+    <div class="row border-bottom">
+      <div class="col-lg-6 gallery-box py-5">
+        <!-- Big Image -->
+        <div class="big-image p-4 w-100 border">
+          <img class="product-image" src="Images/Shop Single/pro-1a.jpg" alt="Big Image" id="big-image" />
+        </div>
+        <!-- Thumbnails -->
+        <div class="thumbnails pt-3">
+          <img class="border img-fluid p-2" src="Images/Shop Single/pro-1.jpg" alt="Galery 1"
+            onclick="changeImage('Images/Shop Single/pro-1a.jpg')" />
+          <img class="border img-fluid p-2" src="Images/Shop Single/pro-2b.jpg" alt="Galery 2"
+            onclick="changeImage('Images/Shop Single/pro-2b.jpg')" />
+          <img class="border img-fluid p-2" src="Images/Shop Single/pro-3.jpg" alt="Galery 3"
+            onclick="changeImage('Images/Shop Single/pro-3b.jpg')" />
+          <img class="border img-fluid p-2" src="Images/Shop Single/pro-4.jpg" alt="Galery 4"
+            onclick="changeImage('Images/Shop Single/pro-4b.jpg')" />
+          <img class="border img-fluid p-2" src="Images/Shop Single/pro-5.jpg" alt="Galery 5"
+            onclick="changeImage('Images/Shop Single/pro-5b.jpg')" />
+        </div>
+      </div>
+      <div class="col-lg-6 gallery-content py-5 mt-3">
+        <h1 class="product-name">
+          Canon MegaTank G3270 All-in-One Wireless Inkjet Printer. for Home
+          Use, Print, Scan and Copy, Black
+        </h1>
+        <div class="tag">
+          <i class="bi bi-tag"></i>
+          <p>printer</p>
+          <span>></span>
+          <a href="#">#canon</a>
+        </div>
+        <p class="product-price">$149.00</p>
+        <p class="product-details">
+          Available at a lower price from other sellers that may not offer
+          free Prime shipping.
+        </p>
+
+        <div class="gallery-content-box-2">
+          <div class="form_chooseColor">
+            <label for="chooseColor">Choose Color</label>
+            <div class="color-option">
+              <input type="checkbox" id="color1" class="color-checkbox" />
+              <label for="color1" class="color-label color-box-1"></label>
+
+              <input type="checkbox" id="color2" class="color-checkbox" />
+              <label for="color2" class="color-label color-box-2"></label>
+
+              <input type="checkbox" id="color3" class="color-checkbox" />
+              <label for="color3" class="color-label color-box-3"></label>
+
+              <input type="checkbox" id="color4" class="color-checkbox" />
+              <label for="color4" class="color-label color-box-4"></label>
+            </div>
+          </div>
+
+          <script>
+            // ======================= Choose Color Start ================= //
+            document
+              .querySelectorAll(".color-checkbox")
+              .forEach((checkbox) => {
+                checkbox.addEventListener("change", function () {
+                  document
+                    .querySelectorAll(".color-checkbox")
+                    .forEach((cb) => {
+                      if (cb !== this) cb.checked = false;
+                    });
+                });
+              });
+            // ======================= Choose Color End ================= //
+          </script>
+
+          <div class="bty-qty flex-1">
+            <div class="battery-health">
+              <label for="battery_health">Battery Health</label>
+              <select name="health" id="battery-health">
+                <option>5100 mAH</option>
+                <option>6200 mAH</option>
+                <option>8000 mAH</option>
+              </select>
+            </div>
+            <div class="gallery-content-quantity">
+              <label for="gallery-quantity">Product Quantity</label>
+              <select name="quantity" id="gallery quantity">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-box-3 flex-2 mt-5">
+          <a href="#" class="box">
+            <i class="bi bi-cart4 add-cart"></i>
+            <span>Add_Cart</span>
+          </a>
+          <a href="#" class="box">
+            <i class="bi bi-arrow-repeat"></i>
+            <span>Compare</span>
+          </a>
+          <a href="#" class="box">
+            <i class="bi bi-heart"></i>
+            <span>Wishlist</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Shop Grid Single Product Details Start -->
+    <div class="row single_product_details py-5 border-bottom">
+      <div class="col-lg-6 box-1 p-5">
+        <h1 class="product_details_head">Warrant & Support</h1>
+        <p>
+          <strong>Ike_Shop Return Policy</strong>: Ike_Shop Voluntary 30-Day
+          Return Guarantee: You can return many items you have purchased
+          within 30 days following delivery of the item to you. Our Voluntary
+          30-Day Return Guarantee does not affect your legal right of
+          withdrawal in any way. You can find out more about the exceptions
+          and conditions
+        </p>
+        <h1 class="product_details_head">About this item</h1>
+        <ul class="product_details_list">
+          <li>
+            <p>Wireless 3-in-1: Print | Copy | Scan</p>
+          </li>
+          <li>
+            <p>
+              Integrated Ink Tanks - Up to 6,000 pages BW / 7,700 pages Color
+              included!
+            </p>
+          </li>
+          <li>
+            <p>Black 11 ipm / Color 6 ipm</p>
+          </li>
+          <li>
+            <p>100-Sheet Rear Tray</p>
+          </li>
+          <li>
+            <p>Single-sided Printing</p>
+          </li>
+          <li>
+            <p>
+              Print from your favorite mobile devices using the free Canon
+              PRINT app, Apple AirPrint and Mopria Print Service
+            </p>
+          </li>
+          <li>
+            <p>Intuitive, Easy to Use 1.35” Square LCD Screen</p>
+          </li>
+        </ul>
+      </div>
+      <div class="col-lg-6 box-1 p-5">
+        <h1 class="product_details_head">Details</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+          impedit nobis maxime, dolore, consequuntur fugiat delectus nostrum
+          aliquam officia praesentium minima vitae velit? Quae ducimus veniam
+          illo unde ratione quod, voluptatibus optio eveniet odio deserunt
+          laboriosam voluptatem debitis distinctio delectus?
+        </p>
+        <h1 class="product_details_head">Features</h1>
+        <p>
+          Network-Ready, Epeat Qualified, Energy Star, Display Screen,
+          Borderless Printing
+        </p>
+        <h1 class="product_details_head">
+          Report an issue to this product or seller
+        </h1>
+        <p>
+          <strong>Note:</strong> Products with electrical plugs are designed
+          for use in the US. Outlets and voltage differ internationally and
+          this product may require an adapter or converter for use in your
+          destination. Please check compatibility before purchasing.
+        </p>
+      </div>
+    </div>
+    <!-- Shop Grid Single Product Details End -->
+
+    <!-- Review & Comment Section Start -->
+    <div class="row review_cont border-bottom py-5">
+      <div class="col-lg-4 rate border p-5">
+        <h1>4.5 (Overall)</h1>
+        <div class="star my-3">
+          <div class="box">5 Stars - 5</div>
+          <div class="box-1">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+          </div>
+        </div>
+        <div class="star my-3">
+          <div class="box">4 Stars - 4</div>
+          <div class="box-1">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star"></i>
+          </div>
+        </div>
+        <div class="star my-3">
+          <div class="box">3 Stars - 3</div>
+          <div class="box-1">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star"></i>
+            <i class="bi bi-star"></i>
+          </div>
+        </div>
+        <div class="star my-3">
+          <div class="box">2 Stars - 2</div>
+          <div class="box-1">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star"></i>
+            <i class="bi bi-star"></i>
+            <i class="bi bi-star"></i>
+          </div>
+        </div>
+        <div class="star my-3">
+          <div class="box">1 Stars - 0</div>
+          <div class="box-1">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star"></i>
+            <i class="bi bi-star"></i>
+            <i class="bi bi-star"></i>
+            <i class="bi bi-star"></i>
+          </div>
+        </div>
+
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary leave-comment mt-5" data-bs-toggle="modal"
+          data-bs-target="#exampleModal">
+          Leave a Review
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content position-relative">
+              <div class="modal-header">
+                <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+
+              <div class="modal-body border-bottom">
+                <h1 class="title">Leave a Review</h1>
+              </div>
+
+              <!-- Message Form Start -->
+              <form action="" class=" mt-5 leave-message-form">
+                <div class="row form_container">
+                  <div class="col-md-6 form_box position-relative py-4">
+                    <label for="full_name">Your Name <span>*</span></label>
+                    <input type="text" name="full_name" id="contact-fullName" onkeyup="validateName()">
+                    <span id="full_name-error" class="error-msg"></span>
+                  </div>
+
+                  <div class="col-md-6 form_box position-relative py-4">
+                    <label for="email">Your Email <span>*</span></label>
+                    <input type="email" name="email" id="contact-email" onkeyup="validateEmail()">
+                    <span id="email-error" class="error-msg"></span>
+                  </div>
+
+                  <div class="col-md-6 form_box position-relative py-4">
+                    <label for="subject">Subject <span>*</span></label>
+                    <input type="text" name="subject" id="contact-subject" onkeyup="validateSubject()">
+                    <span id="subject-error" class="error-msg"></span>
+                  </div>
+
+                  <div class="col-md-6 form_box position-relative py-4">
+                    <label for="email">Rating <span>*</span></label>
+                    <select name="" id="">
+                      <option>5 Stars</option>
+                      <option>5 Stars</option>
+                      <option>4 Stars</option>
+                      <option>3 Stars</option>
+                      <option>2 Stars</option>
+                      <option>1 Star</option>
+                    </select>
+                  </div>
+
+                  <div class="form_box position-relative py-4">
+                    <label for="review">Review <span>*</span></label>
+                    <textarea name="message" id="contact-message" onkeyup="validateMessage()"></textarea>
+                    <span id="message-error" class="error-msg"></span>
+                  </div>
+                </div>
+                <div class="form_box position-relative">
+                  <a href="review-submit.html" class="review-btn" onclick="return validateSubmit_1()">
+                    <span>Submit Review</span>
+                    <i class="bi bi-send-fill"></i>
+                  </a>
+                  <span id="submit-error" class="error-msg"></span>
+                </div>
+              </form>
+            </div>
+
+
+            <!-- Message Form End -->
+
+          </div>
+        </div>
+      </div>
+      <div class="col-lg review-comments border p-5">
+        <h1>Latest Reviews</h1>
+        <div class="review-comment-box py-5">
+          <img src="Images/Review/comment1.jpg" class="img-fluid" alt="Comment User1">
+          <div class="user-comment border p-3">
+            <h1>Great service, very helpful and friendly staff. Highly recommend.</h1>
+            <p class="user-name">Jacop Hammond</p>
+            <div class="user-rate">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+            </div>
+            <p class="comment-info">"Fantastic experience! The customer service team was very helpful when I had questions about my order. The product quality exceeded my expectations. A+!"</p>
+          </div>
+        </div>
+
+        <div class="review-comment-box py-5">
+          <img src="Images/Review/comment2.jpg" class="img-fluid" alt="Comment User1">
+          <div class="user-comment border p-3">
+            <h1>Great service, very helpful and friendly staff. Highly recommend.</h1>
+            <p class="user-name"> Arice Hamilton</p>
+            <div class="user-rate">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star"></i>
+              <i class="bi bi-star"></i>
+            </div>
+            <p class="comment-info">"This was my first time ordering from this site, and I’m impressed! The checkout process was easy, and my items arrived in pristine condition. Highly recommend!"</p>
+          </div>
+        </div>
+        <div class="review-comment-box py-5">
+          <img src="Images/Review/comment3.jpg" class="img-fluid" alt="Comment User1">
+          <div class="user-comment border p-3">
+            <h1>Very helpful and friendly staff.</h1>
+            <p class="user-name"> Jessi Ham</p>
+            <div class="user-rate">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star"></i>
+            </div>
+            <p class="comment-info">"I found some great products here, but I think the site could benefit from more detailed product descriptions. Overall, a decent shopping experience."</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <!-- Review & Comment Section End -->
+  </section>
+  <!-- ====================== Container one Section End ======================== -->
+
+  <!-- ================== Footer Section Start ========================== -->
+    <section class="container-fluid footer-container">
+      <div class="first-footer-cont">
+        <div class="first-footer-box">
+          <a href="index.html"
+            ><img
+              src="Images/footer-logo.png"
+              alt="Footer Logo"
+              class="footer-logo"
+          /></a>
+          <div class="sub-cont">
+            <div class="subscribe-info text-center">
+              <h1>Subscribe to our Newsletter</h1>
+              <p>Get all the latest information, sales and offers.</p>
+            </div>
+            <div class="subscribe-form">
+              <form action="">
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Email address here..."
+                  required
+                />
+                <button type="submit" class="sub-send flex-1">
+                  <i class="bi bi-send-fill"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="second-footer-cont">
+          <div class="second-footer-box">
+            <div class="second-footer-box-heading">
+              <h1>Get in touch with us</h1>
+              <span class="bar-3"></span>
+            </div>
+            <p>Phone: (+233) 549 175 604</p>
+            <p>Monday-Friday: 9:00am - 5:00pm</p>
+            <p>Saturday: 9:00am - 3:00pm</p>
+            <p>isaacskikrams@gmail.com</p>
+          </div>
+
+          <div class="second-footer-box" style="width: 300px">
+            <div class="second-footer-box-heading">
+              <h1>Get in touch with us</h1>
+              <span class="bar-3"></span>
+            </div>
+            <a href="#" class="cont-1">
+              <i class="bi bi-apple"></i>
+              <div class="box">
+                <p>Download on the</p>
+                <h1>Apple Store</h1>
+              </div>
+            </a>
+            <a href="#" class="cont-1">
+              <i class="bi bi-google-play"></i>
+              <div class="box">
+                <p>Download on the</p>
+                <h1>Google Play</h1>
+              </div>
+            </a>
+          </div>
+
+          <div class="second-footer-box" style="width: 300px">
+            <div class="second-footer-box-heading">
+              <h1>Information</h1>
+              <span class="bar-3"></span>
+            </div>
+            <a href="#">About Us</a>
+            <a href="#">Contact Us</a>
+            <a href="#">Download</a>
+            <a href="#">Site map</a>
+            <a href="#">FAQS</a>
+          </div>
+
+          <div class="second-footer-box" style="width: 300px">
+            <div class="second-footer-box-heading">
+              <h1>Shop Department</h1>
+              <span class="bar-3"></span>
+            </div>
+            <a href="#">Computers & Accessories</a>
+            <a href="#">Smart Phones & Tablets</a>
+            <a href="#">TV, Video & Sounds</a>
+            <a href="#">Cameras, Photo & Video</a>
+            <a href="#">Headphones</a>
+          </div>
+        </div>
+        <div class="third-footer-box">
+          <div class="box-1">
+            <p>We accept:</p>
+            <img src="Images/credit-cards-footer.png" alt="" />
+          </div>
+          <div class="box-2 text-center">
+            <p>Designed and Developed by:</p>
+            <a href="#">Isaacski Krams</a>
+          </div>
+          <div class="box-3">
+            <p>Follow us on:</p>
+            <div class="social-handles-2">
+              <a
+                href="https://www.facebook.com/isaacski.krams.3"
+                target="_blank"
+                title="Facebook"
+                ><i class="bi bi-facebook"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/isaacski.2001"
+                target="_blank"
+                title="Linkedin"
+                ><i class="bi bi-linkedin"></i
+              ></a>
+              <a
+                href="https://www.youtube.com/Isaacski"
+                target="_blank"
+                title="YouTube"
+                ><i class="bi bi-youtube"></i
+              ></a>
+              <a
+                href="https://www.github.com/Isaacski1"
+                target="_blank"
+                title="Github"
+                ><i class="bi bi-github"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ================== Footer Section End ========================== -->
+    <!-- Go up button Start -->
+    <a href="#top" class="go-top" data-go-top>
+      <i class="bx bxs-up-arrow"></i>
+    </a>
+    <!-- Go up button End -->
+  <!-- =============== Bootstrap JS CDN ============ -->
+  <script src="./lib/bootstrap.bundle.js"></script>
+  <!-- =============== jQuery CDN Link ============= -->
+  <script src="lib/jquery.js"></script>
+
+  <!-- =============== Owl Carousel JS CDN ============ -->
+  <script src="./lib/owl.carousel.min.js"></script>
+
+  <!-- ============== Script JS Link ============= -->
+  <script src="./JS/script.js"></script>
+</body>
+
+</html>
