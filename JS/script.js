@@ -38,6 +38,11 @@ $("document").ready(function () {
   });
 });
 
+// Background Pre-Loader
+setTimeout(function () {
+  $(".backgroud-preloader").fadeToggle();
+}, 3000);
+
 // ----------------------- Navigation Bar Sticky Start ----------------------
 window.addEventListener("scroll", function () {
   const second_navbar = document.querySelector(".second-nav_menu");
