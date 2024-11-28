@@ -1,0 +1,33 @@
+========================================== Ike Shop Ecommerce Website ==================================
+
+TEMPLATE DESCRIPTION:
+Ike Shop is a modern and responsive website template design for Shopping startups and businesses.
+It features a clean and minimalist design, easy-to-use interface, and a range of customization.
+
+REQUIREMENTS:
+1. HTML5 and CSS and compatible browswer
+2. JavaScript for functionality
+3. Bootstrap 5 for responsive modes
+4. Owl Carousel for cards slides
+5. SEO for faster searching
+
+INSTALLATION:
+1. Unzip the template package
+2. Open the "index.html" file in a text editor or IDE
+3. Customize the template as needed.
+4. Upload the template to your website or CMS
+
+CUSTOMIZATION:
+1. To change the logo, replace the "logo.png" in the "Images" folder.
+2. To change the color scheme, modify the "style.css" file in the "CSS" folder.
+3. To add or remove sections, modify the "index.html" file.
+
+TROUBLESHOOTING:
+1.If the template is not displaying correctly, check that you have the latest of the Bootstrap and jQuery installed.
+2. If you encounter any issue with the customization, contact my helping center at isaacskikrams@gmail.com
+
+LICENSING:
+You are free to use and modify the templatesss for personal or commercial use
+
+SUPPORT:
+Contact us at mailto: isaacskikrams@gmail.com
