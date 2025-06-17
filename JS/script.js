@@ -38,11 +38,6 @@ $("document").ready(function () {
   });
 });
 
-// Background Pre-Loader
-setTimeout(function () {
-  $(".backgroud-preloader").fadeToggle();
-}, 3000);
-
 // ----------------------- Navigation Bar Sticky Start ----------------------
 window.addEventListener("scroll", function () {
   const second_navbar = document.querySelector(".second-nav_menu");
@@ -157,12 +152,27 @@ function handle_remove_cart_item() {
   update();
 }
 
-// ---------------- Handler Cart Quantity ------------------
 function handle_cart_quantity() {
   if (isNaN(this.value) || this.value < 1) {
     this.value = 1;
   }
-  update();
+
+  // Update the quantity in the itemsAdded array
+  const itemName =
+    this.parentElement.querySelector(".cart-item-name").innerHTML;
+  const updatedQuantity = parseInt(this.value, 10);
+
+  itemsAdded = itemsAdded.map((item) => {
+    if (item.product_name === itemName) {
+      return { ...item, product_quantity: updatedQuantity };
+    }
+    return item;
+  });
+
+  // Save the updated cart to localStorage
+  localStorage.setItem("cartItems", JSON.stringify(itemsAdded));
+
+  update(); // Update the cart UI
 }
 
 // --------------- Handler Add Cart -------------------
@@ -173,7 +183,12 @@ function handle_add_cart() {
   let product_price = product.querySelector(".product-price").innerHTML;
   let product_image = product.querySelector(".product-image").src;
 
-  let add_cart_new = { product_name, product_price, product_image };
+  let add_cart_new = {
+    product_name,
+    product_price,
+    product_image,
+    product_quantity: 1, // Set the initial quantity to 1
+  };
 
   // When object is already in the cart, alert message should appear
   if (itemsAdded.find((el) => el.product_name === add_cart_new.product_name)) {
@@ -204,12 +219,12 @@ function updateTotal() {
 
   cart_items.forEach((cart_item) => {
     let cart_price = cart_item.querySelector(".cart-price");
-    let price = parseFloat(cart_price.innerHTML.replace("$", "")) || 0;
+    let price = parseFloat(cart_price.innerHTML.replace("GHS", "")) || 0;
     let total_quantity = cart_item.querySelector(".cart-quantity").value;
     total += price * total_quantity;
   });
-  total = total.toFixed(2); // The total price should be in two decimal place
-  total_price.innerHTML = "$" + total;
+  total = total.toFixed(2);
+  total_price.innerHTML = "GHS " + total;
 }
 
 // Add product to cart //
@@ -225,6 +240,20 @@ function contentDocument(product_name, product_price, product_image) {
           <i class="bx bx-x remove-cart"></i>
         </div>`;
 }
+
+function checkoutBtn() {
+  const cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
+
+  if (cartItems.length === 0) {
+    alert(
+      "Your cart is empty. Please add items to the cart before proceeding to checkout."
+    );
+    return;
+  }
+
+  // Redirect to the checkout page
+  window.location.href = "checkout.html";
+}
 // ======================= Cart Section End ===================== //
 
 // ======================= Go Top Button Start ======================//
@@ -239,6 +268,7 @@ window.addEventListener("scroll", function () {
 
 // ======================= Validation Error Messages Start ========================== //
 const fullNameError = document.getElementById("full_name-error");
+const usernameError = document.getElementById("username-error");
 const firstNameError = document.getElementById("first-name-error");
 const lastNameError = document.getElementById("last-name-error");
 const emailError = document.getElementById("email-error");
@@ -249,6 +279,24 @@ const subjectError = document.getElementById("subject-error");
 const messageError = document.getElementById("message-error");
 const SubmitError = document.getElementById("submit-error");
 const SubmitError_1 = document.getElementById("submit-error");
+
+// ------------------ Validate Username Message Start ----------------------
+function validateUsername() {
+  let username = document.getElementById("contact-username").value;
+  // ----------- Conditional Statement ----------------- //
+  if (username.length == 0) {
+    usernameError.innerHTML = "Username is required";
+    return false;
+  }
+
+  if (!username.match(/^[A-Za-z0-9]+$/)) {
+    usernameError.innerHTML = '<i class="wrong bi bi-x-circle-fill"></i>';
+    return false;
+  }
+  // ----------------- Remove Error Message -------------------
+  usernameError.innerHTML = "<i class='correct bi bi-check-circle-fill'></i>";
+  return true;
+}
 
 // ------------------ Validate First Name Message Start ----------------------
 function validateFirstName() {
@@ -334,13 +382,7 @@ function validatePhone() {
 // ----------------- Validate Password Message Start --------------- //
 function validatePassword() {
   let password = document.getElementById("contact-password").value;
-  document
-    .getElementById("contact-password")
-    .addEventListener("input", validatePassword);
   let repeatPassword = document.getElementById("contact-repeat-password").value;
-  document
-    .getElementById("contact-repeat-password")
-    .addEventListener("input", validatePassword);
 
   // Clear previous error messages
   passwordError.innerHTML = "";
@@ -359,15 +401,18 @@ function validatePassword() {
   // --------------- If everything is valid --------------
   passwordError.innerHTML = "<i class='correct bi bi-check-circle-fill'></i>";
 
-  // Checks if repeat password matches the original password
-  if (password !== repeatPassword) {
-    passwordAgainError.innerHTML = "Passwords do not match";
-    return false;
+  // Only check repeat password if it is not empty
+  if (repeatPassword.length > 0) {
+    if (password !== repeatPassword) {
+      passwordAgainError.innerHTML = "Passwords do not match";
+      return false;
+    }
+    // If everything is valid
+    passwordAgainError.innerHTML =
+      "<i class='correct bi bi-check-circle-fill'></i>";
+  } else {
+    passwordAgainError.innerHTML = "";
   }
-
-  // If everything is valid
-  passwordAgainError.innerHTML =
-    "<i class='correct bi bi-check-circle-fill'></i>";
   return true;
 }
 // ----------------- Validate Password Message End --------------- //
@@ -433,6 +478,7 @@ function validateMessage() {
 function validateSubmit() {
   // Conditional Statement
   if (
+    !validateUsername() ||
     !validateFirstName() ||
     !validateLastName() ||
     !validateEmail() ||
@@ -468,47 +514,34 @@ function validateSubmit_1() {
 }
 // ----------------- Validate Submit Message End ----------------- //
 
-// ======================= Validation Error Messages End ========================== //
+document.addEventListener("DOMContentLoaded", function () {
+  const passwordInput = document.getElementById("contact-password");
+  const togglePassword = document.getElementById("toggle-password");
+  if (passwordInput && togglePassword) {
+    togglePassword.addEventListener("click", function () {
+      const type = passwordInput.type === "password" ? "text" : "password";
+      passwordInput.type = type;
+      this.classList.toggle("bi-eye");
+      this.classList.toggle("bi-eye-slash");
+    });
+  }
+});
 
-// ======================= Price Range Section Section Start ======================= //
-// const priceRange = document.getElementById("price-range");
-// const minPrice = document.getElementById("min-price");
-// const maxPrice = document.getElementById("max-price");
-// const priceRangeFill = document.getElementById("price-range-fill");
-
-// priceRange.addEventListener("input", () => {
-//   const value = priceRange.value;
-//   const min = priceRange.min;
-//   const max = priceRange.max;
-
-//   priceRangeFill.style.width = ((value - min) / (max - min)) * 100 + "%";
-//   minPrice.innerHTML = `$${value}`;
-// });
-
-// Filter by price
-// const priceCheckBoxes = document.querySelectorAll(".checkbox[type='radio']");
-
-// priceCheckBoxes.forEach((checkbox) => {
-//   checkbox.addEventListener("change", (e) => {
-//     const priceRange = e.target.value.split("-");
-//     const minPrice = parseInt(priceRange[0]);
-//     const maxPrice = parseInt(priceRange[1]);
-//     console.log(minPrice, maxPrice);
-//   });
-// });
-
-// document.addEventListener("DOMContentLoaded", () => {
-//   const priceCheckBoxes = document.querySelectorAll(".checkbox[type='radio']");
-
-//   priceCheckBoxes.forEach((checkbox) => {
-//     checkbox.addEventListener("change", (e) => {
-//       const priceRange = e.target.value.split("-");
-//       const minPrice = parseInt(priceRange[0]);
-//       const maxPrice = parseInt(priceRange[1]);
-//       console.log(minPrice, maxPrice);
-//     });
-//   });
-// });
+document.addEventListener("DOMContentLoaded", function () {
+  const contactRepeatPassword = document.getElementById(
+    "contact-repeat-password"
+  );
+  const togglePassword = document.getElementById("toggle-password-1");
+  if (contactRepeatPassword && togglePassword) {
+    togglePassword.addEventListener("click", function () {
+      const type =
+        contactRepeatPassword.type === "password" ? "text" : "password";
+      contactRepeatPassword.type = type;
+      this.classList.toggle("bi-eye");
+      this.classList.toggle("bi-eye-slash");
+    });
+  }
+});
 
 // ======================= Price Range Section Section Start ======================= //
 const priceRange = document.getElementById("price-range");

@@ -73,11 +73,6 @@
     font-size: 1.5rem !important;
   }
 
-  .owl-prev,
-  .owl-next {
-    display: none !important;
-  }
-
   /* Hero Section End */
   /* Features Section Start */
   .feature_headings h1 {
@@ -138,7 +133,7 @@
     text-align: center !important;
   }
   .second-footer-box {
-    width: 300px !important;
+    width: 325px !important;
   }
   .second-footer-box-heading {
     display: flex !important;
@@ -277,7 +272,10 @@
   /* Review Comment End */
 
   /* Blog Single Start */
-
+  /* .blog {
+    width: 95% !important;
+    margin: auto !important;
+  } */
   .blog-head {
     font-size: 2rem;
   }
@@ -368,10 +366,6 @@
     display: none !important;
   }
 
-  .offer-banner .content h2 {
-    margin-left: 60px !important;
-  }
-
   .offer-banner .content a {
     font-size: 1.7rem !important;
     padding: 10px 20px !important;
@@ -390,10 +384,6 @@
   .third-footer-box .box-2 p,
   .third-footer-box .box-3 p {
     font-size: 1.3rem !important;
-  }
-
-  .third-footer-box .box-1 {
-    align-items: center !important;
   }
 
   .third-footer-box .box-1 img {
@@ -623,12 +613,14 @@
   }
 
   /* Hero Section Start */
+
   .owl-prev,
   .owl-next {
-    background: none;
-    color: var(--white-color);
-    cursor: pointer;
-    opacity: 1;
+    background: var(--background-color) !important;
+    color: var(--white-color) !important;
+    cursor: pointer !important;
+    width: 30px !important;
+    opacity: 1 !important;
   }
 
   .hero-2-box .content h4 {

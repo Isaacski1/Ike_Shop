@@ -485,7 +485,7 @@ html {
   justify-content: center;
   margin: 2rem auto;
   padding: 13px 30px;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   font-weight: var(--bolder-font-weight);
   color: var(--white-color);
   background: var(--dark-color);
@@ -1433,23 +1433,3 @@ html {
   opacity: 1;
 }
 /* Go Top Button End */
-
-/* Background Preloader */
-.backgroud-preloader {
-  position: fixed;
-  z-index: 999;
-  background: var(--white-color);
-  width: 100%;
-  height: 100%;
-}
-
-.loading {
-  width: 200px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  cursor: default;
-  -webkit-user-select: none;
-  -webkit-user-drag: none;
-}

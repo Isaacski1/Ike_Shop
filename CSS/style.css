@@ -187,6 +187,13 @@ html {
   margin: 1px auto;
 }
 
+#user-greeting {
+  font-size: 1.7rem;
+  color: var(--deep-light-color);
+  font-weight: var(--normal-font-weight);
+  margin-top: 10px;
+}
+
 /* ======================== First Navigation Menu End ======================== */
 
 /* ======================== Second Navigation Menu Start ======================== */
@@ -197,7 +204,7 @@ html {
 }
 
 .second-nav_menu .box-1 .logo {
-  max-width: 200px;
+  max-width: 150px;
   position: relative;
 }
 
@@ -282,7 +289,7 @@ html {
 .hotline a {
   font-weight: var(--normal-font-weight);
   color: var(--light-dark-color);
-  font-size: 1.6rem;
+  font-size: 2rem;
 }
 
 .hotline a:hover {
@@ -472,7 +479,7 @@ html {
   justify-content: center;
   margin: 2rem auto;
   padding: 13px 30px;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   font-weight: var(--bolder-font-weight);
   color: var(--white-color);
   background: var(--dark-color);
@@ -577,7 +584,7 @@ html {
 }
 
 .navbar-nav .nav-item a {
-  font-size: 1.7rem;
+  font-size: 2rem;
   font-weight: var(--normal-font-weight);
   color: var(--light-dark-color);
   padding: 14px 20px !important;
@@ -667,48 +674,50 @@ html {
 }
 
 .hero-1-item .content h4 {
-  font-size: 1.5dvw;
+  font-size: 2.2rem;
   font-weight: var(--bolder-font-weight);
   color: var(--gray-color);
   margin-bottom: 1rem;
 }
 
 .hero-1-item .content h1 {
-  font-size: 2.5dvw;
+  font-size: 5rem;
   font-weight: var(--super-font-weight);
   color: var(--dark-color);
   margin-bottom: 2rem;
 }
 
 .hero-1-item .content p {
-  font-size: 1.3dvw;
+  font-size: 2rem;
   font-weight: var(--normal-font-weight);
   color: var(--gray-color);
-  width: 55%;
+  width: 50%;
 }
 
 .hero-1-item .content .price {
-  justify-content: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
   column-gap: 0.5rem;
-  align-items: baseline;
+  margin-bottom: 2rem;
 }
 
 .hero-1-item .content .price span {
   font-weight: var(--bolder-font-weight);
   color: var(--gray-color);
-  font-size: 1.2dvw;
+  font-size: 2.2rem;
 }
 
 .hero-1-item .content .price h1 {
-  font-size: 1.6dvw;
+  font-size: 4rem;
   font-weight: var(--super-font-weight);
   color: var(--background-color);
+  margin-top: 7px;
 }
 
 .hero-1-item .content .buy-btn {
-  margin-top: 1rem;
   padding: 13px 40px;
-  font-size: 1.5dvw;
+  font-size: 2rem;
   font-weight: var(--normal-font-weight);
   color: var(--deep-light-color);
   background: var(--background-color);
@@ -786,13 +795,13 @@ html {
 }
 
 .hero-2-box .content h1 {
-  font-size: 1.8dvw;
+  font-size: 4rem;
   font-weight: var(--super-font-weight);
   color: var(--dark-color);
 }
 
 .hero-2-box .content h2 {
-  font-size: 2dvw;
+  font-size: 3rem;
   font-weight: var(--super-font-weight);
   color: var(--background-color);
 }
@@ -810,13 +819,13 @@ html {
 }
 
 .hero-2-box-1 .content h4 {
-  font-size: 1.8dvw;
+  font-size: 2.5rem;
   font-weight: var(--bolder-font-weight);
   color: var(--white-color);
 }
 
 .hero-2-box-1 .content p {
-  font-size: 1.4dvw;
+  font-size: 4rem;
   font-weight: var(--normal-font-weight);
   color: var(--deep-light-color);
   width: 100%;
@@ -826,7 +835,7 @@ html {
   margin-top: 1rem;
   padding: 10px 30px;
   background: var(--white-color);
-  font-size: 1.5dvw;
+  font-size: 2.2rem;
   font-weight: var(--normal-font-weight);
   color: var(--background-color);
   cursor: pointer;
@@ -1085,13 +1094,13 @@ html {
 }
 
 .banner-box .content h1 {
-  font-size: 1.8dvw;
+  font-size: 3rem;
   font-weight: var(--super-font-weight);
   color: var(--dark-color) !important;
 }
 
 .banner-box .content p {
-  font-size: 1dvw;
+  font-size: 2rem;
   font-weight: var(--bolder-font-weight);
   color: var(--gray-color);
   margin-bottom: 2rem;
@@ -1221,7 +1230,7 @@ html {
 }
 
 .offer-banner .content h1 {
-  font-size: 2dvw;
+  font-size: 5rem;
   font-weight: var(--super-font-weight);
   color: var(--dark-color);
 }
@@ -1229,7 +1238,7 @@ html {
 .offer-banner .content p {
   width: 80%;
   display: none;
-  font-size: 1.3dvw;
+  font-size: 2rem;
   font-weight: var(--bolder-font-weight);
   color: var(--gray-color);
 }
@@ -1242,7 +1251,7 @@ html {
 }
 
 .offer-banner .content a {
-  font-size: 1.5dvw;
+  font-size: 2.5rem;
   font-weight: var(--bolder-font-weight);
   color: var(--white-color);
   padding: 13px 50px;
@@ -1885,22 +1894,30 @@ html {
 
 /* Go Top Button End */
 
-/* Background Preloader */
-.backgroud-preloader {
-  position: fixed;
-  z-index: 999;
-  background: var(--white-color);
-  width: 100%;
-  height: 100%;
+/* search form */
+.search-results {
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  background-color: #f9f9f9;
 }
 
-.loading {
-  width: 200px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  cursor: default;
-  -webkit-user-select: none;
-  -webkit-user-drag: none;
+.search-result-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.search-result-item img {
+  margin-right: 10px;
+}
+
+.search-result-item h4 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.search-result-item p {
+  margin: 0;
+  color: #555;
 }
