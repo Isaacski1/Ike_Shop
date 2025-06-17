@@ -1,138 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>FAQs | Ike_Shop</title>
-    <!-- ============= Fav Icon =============== -->
-    <link rel="shortcut icon" href="Images/fav_icon.png" type="image/x-icon" />
-    <!-- ================== Custom Style Sheet =================== -->
-    <link rel="stylesheet" href="./CSS/faq.css" />
-    <!-- ================== Media Query CDN =================== -->
-    <link rel="stylesheet" href="./CSS/responsive.css" />
-    <link rel="stylesheet" href="./CSS/style.css" />
-    <!-- ============== CSS Bootstrap ================ -->
-    <link rel="stylesheet" href="./lib/bootstrap.min.css" />
-    <!-- =============== Owl Carousel ================ -->
-    <link rel="stylesheet" href="./lib/owl.carousel.min.css" />
-    <!-- =============== Owl Carousel Theme ================ -->
-    <link rel="stylesheet" href="./lib/owl.theme.default.min.css" />
-    <!-- ============== Bootstrap Icons CDN -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
-    />
-    <!-- ============= Google Fonts CDN ================== -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap"
-      rel="stylesheet"
-    />
-    <!-- =============== Box Icon CDN ============== -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
-    />
-  </head>
-  <body>
-    <!-- =========== Background Pre-loader Start ========== -->
-    <div class="backgroud-preloader">
-      <img src="Images/loading.gif" class="loading" />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FAQs | Ike_Shop</title>
+  <!-- ============= Fav Icon =============== -->
+  <link rel="shortcut icon" href="Images/fav_icon.png" type="image/x-icon" />
+  <!-- ================== Custom Style Sheet =================== -->
+  <link rel="stylesheet" href="./CSS/faq.css" />
+  <!-- ================== Media Query CDN =================== -->
+  <link rel="stylesheet" href="./CSS/responsive.css" />
+  <link rel="stylesheet" href="./CSS/style.css" />
+  <!-- ============== CSS Bootstrap ================ -->
+  <link rel="stylesheet" href="./lib/bootstrap.min.css" />
+  <!-- =============== Owl Carousel ================ -->
+  <link rel="stylesheet" href="./lib/owl.carousel.min.css" />
+  <!-- =============== Owl Carousel Theme ================ -->
+  <link rel="stylesheet" href="./lib/owl.theme.default.min.css" />
+  <!-- ============== Bootstrap Icons CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <!-- ============= Google Fonts CDN ================== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap"
+    rel="stylesheet" />
+  <!-- =============== Box Icon CDN ============== -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
+</head>
+
+<body>
+  <!-- ------------------- First Navigation Bar Start ---------------------- -->
+  <nav class="flex-2 first-nav_menu">
+    <div class="box-1 flex-1">
+      <div class="currency">
+        <select id="currency-select" name="currency">
+          <option>USD</option>
+          <option>EUR</option>
+          <option>CAD</option>
+          <option>QAR</option>
+          <option>GHS</option>
+        </select>
+      </div>
+      <div class="language">
+        <select name="language" id="language-select">
+          <option>ENGLISH</option>
+          <option>FRENCH</option>
+          <option>SPANISH</option>
+        </select>
+      </div>
     </div>
-    <!-- =========== Background Pre-loader End ========== -->
-    <!-- ------------------- First Navigation Bar Start ---------------------- -->
-    <nav class="flex-2 first-nav_menu">
-      <div class="box-1 flex-1">
-        <div class="currency">
-          <select id="currency-select" name="currency">
-            <option>USD</option>
-            <option>EUR</option>
-            <option>CAD</option>
-            <option>QAR</option>
-            <option>GHS</option>
-          </select>
-        </div>
-        <div class="language">
-          <select name="language" id="language-select">
-            <option>ENGLISH</option>
-            <option>FRENCH</option>
-            <option>SPANISH</option>
-          </select>
-        </div>
+
+    <div class="box-2">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about-us.html">About Us</a></li>
+        <li><a href="contact.html">Contact us</a></li>
+      </ul>
+    </div>
+
+    <div class="box-3 flex-1">
+      <p class="hello"><i class="bi bi-person"></i> <span>Hello</span></p>
+
+      <div class="logins flex-1">
+        <a href="login.html">Sign In</a>
+        <span class="bar"></span>
+        <a class="signup" href="register.html">Sign Up</a>
+      </div>
+    </div>
+  </nav>
+  <!-- ------------------- First Navigation Bar End ---------------------- -->
+
+  <!-- ------------------- Second Navigation Bar Start ------------------------ -->
+  <nav class="flex-2 second-nav_menu">
+    <a href="index.html" class="box-1">
+      <img src="Images/logo.png" class="logo" alt="Logo" />
+    </a>
+
+    <div class="box-2 flex-1">
+      <div class="box-2_1 flex-1 border">
+        <select class="home-category">
+          <option>All</option>
+          <option>Mobile Phones</option>
+          <option>Computers</option>
+          <option>Living Gadgets</option>
+          <option>Gaming</option>
+          <option>Speakers</option>
+          <option>Printers</option>
+          <option>Electric Gadgets</option>
+        </select>
+        <form class="search flex-2">
+          <input type="search" placeholder="Search" />
+          <button type="submit" class="search-icon">
+            <i class="bi bi-search flex-1"></i>
+          </button>
+        </form>
       </div>
 
-      <div class="box-2">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about-us.html">About Us</a></li>
-          <li><a href="contact.html">Contact us</a></li>
-        </ul>
-      </div>
-
-      <div class="box-3 flex-1">
-        <p class="hello"><i class="bi bi-person"></i> <span>Hello</span></p>
-
-        <div class="logins flex-1">
-          <a href="login.html">Sign In</a>
-          <span class="bar"></span>
-          <a class="signup" href="register.html">Sign Up</a>
+      <div class="hotline-box flex-1">
+        <i class="bi bi-telephone border flex-1"></i>
+        <div class="hotline">
+          <h2>Hotline:</h2>
+          <p>(+233) 549 175 604</p>
         </div>
       </div>
-    </nav>
-    <!-- ------------------- First Navigation Bar End ---------------------- -->
+    </div>
 
-    <!-- ------------------- Second Navigation Bar Start ------------------------ -->
-    <nav class="flex-2 second-nav_menu">
-      <a href="index.html" class="box-1">
-        <img src="Images/logo.png" class="logo" alt="Logo" />
-      </a>
-
-      <div class="box-2 flex-1">
-        <div class="box-2_1 flex-1 border">
-          <select class="home-category">
-            <option>All</option>
-            <option>Mobile Phones</option>
-            <option>Computers</option>
-            <option>Living Gadgets</option>
-            <option>Gaming</option>
-            <option>Speakers</option>
-            <option>Printers</option>
-            <option>Electric Gadgets</option>
-          </select>
-          <form class="search flex-2">
-            <input type="search" placeholder="Search" />
-            <button type="submit" class="search-icon">
-              <i class="bi bi-search flex-1"></i>
-            </button>
-          </form>
-        </div>
-
-        <div class="hotline-box flex-1">
-          <i class="bi bi-telephone border flex-1"></i>
-          <div class="hotline">
-            <h2>Hotline:</h2>
-            <p>(+233) 549 175 604</p>
-          </div>
-        </div>
+    <div class="box-3 flex-1">
+      <div class="heart border flex-1 position-relative">
+        <i class="bi bi-heart flex-1"></i>
+        <span class="flex-1">0</span>
       </div>
-
-      <div class="box-3 flex-1">
-        <div class="heart border flex-1 position-relative">
-          <i class="bi bi-heart flex-1"></i>
-          <span class="flex-1">0</span>
-        </div>
-        <div class="cart-icon border flex-1 position-relative">
-          <i class="bi bi-cart flex-1"></i>
-          <span class="quantity flex-1">0</span>
-        </div>
+      <div class="cart-icon border flex-1 position-relative">
+        <i class="bi bi-cart flex-1"></i>
+        <span class="quantity flex-1">0</span>
       </div>
-      <!-- ==================== Cart Section Start =================== -->
-      <div class="cart border">
-        <div class="cart-head">Your Cart Items</div>
-        <!-- Cart Items -->
-        <div class="cart-content">
-          <!-- <div class="cart-items">
+    </div>
+    <!-- ==================== Cart Section Start =================== -->
+    <div class="cart border">
+      <div class="cart-head">Your Cart Items</div>
+      <!-- Cart Items -->
+      <div class="cart-content">
+        <!-- <div class="cart-items">
               <img
                 src="Images/Product/product-1.jpg"
                 class="cart-image border"
@@ -145,537 +134,435 @@
               
               <i class="bx bx-x remove-cart"></i>
             </div> -->
-        </div>
-
-        <!-- Total  Price -->
-        <div class="total">
-          <h2>Total Price:</h2>
-          <p class="total-price">$0.00</p>
-        </div>
-
-        <!-- Checkout  -->
-        <a class="proceed-checkout-btn" href="checkout.html">Checkout</a>
       </div>
-      <!-- ==================== Cart Section End =================== -->
-    </nav>
-    <!-- ------------------- Third Navigation Bar Start --------------------------- -->
 
-    <nav class="navbar navbar-expand-lg">
-      <div class="container-fluid navbar_box">
-        <div class="categories">
-          <div class="dropdown">
-            <a
-              class="btn btn-secondary"
-              href="#"
-              role="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              <div class="box">
-                <i class="bi bi-list"></i>
-                <span>All Categories</span>
-              </div>
-            </a>
+      <!-- Total  Price -->
+      <div class="total">
+        <h2>Total Price:</h2>
+        <p class="total-price">$0.00</p>
+      </div>
 
-            <ul class="dropdown-menu">
-              <li>
-                <a class="dropdown-item" href="computer-1.html"
-                  >Computers & Laptops</a
-                >
-              </li>
-              <li>
-                <a class="dropdown-item" href="electronic-1.html"
-                  >Refrigerator</a
-                >
-              </li>
-              <li>
-                <a class="dropdown-item" href="phone-1.html">Mobile Phones</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="electronic-2.html"
-                  >Gaming Console</a
-                >
-              </li>
-              <li>
-                <a class="dropdown-item" href="printer-1.html">Pirnters</a>
-              </li>
-              <li><a class="dropdown-item" href="camera-2.html">Cameras</a></li>
-              <li>
-                <a class="dropdown-item" href="television-2.html">Television</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="utensil-1.html"
-                  >Kitchen Gadgets</a
-                >
-              </li>
-              <li>
-                <a class="dropdown-item" href="electronic-3.html"
-                  >Room Gadgets</a
-                >
-              </li>
-              <li>
-                <a class="dropdown-item" href="electronic-4.html">VR Console</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="electronic-2.html"
-                  >Air Conditioners</a
-                >
-              </li>
-            </ul>
-          </div>
-        </div>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavDropdown"
-          aria-controls="navbarNavDropdown"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+      <!-- Checkout  -->
+      <button class="proceed-checkout-btn" onclick="checkoutBtn()">
+        Checkout
+      </button>
+    </div>
+    <!-- ==================== Cart Section End =================== -->
+  </nav>
+  <!-- ------------------- Third Navigation Bar Start --------------------------- -->
+
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid navbar_box">
+      <div class="categories">
+        <div class="dropdown">
+          <a class="btn btn-secondary" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <div class="box">
+              <i class="bi bi-list"></i>
+              <span>All Categories</span>
+            </div>
+          </a>
+
+          <ul class="dropdown-menu">
+            <li>
+              <a class="dropdown-item" href="computer-1.html">Computers & Laptops</a>
             </li>
-
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Pages
-              </a>
-              <ul class="dropdown-menu">
-                <li>
-                  <a class="dropdown-item" href="about-us.html">About Us</a>
-                </li>
-                <li>
-                  <a class="dropdown-item active" href="faq.html">FAQs</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="login.html">Login</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="register.html">Register</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="mail-sucess.html"
-                    >Mail Success</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item" href="404.html">404 Error</a>
-                </li>
-              </ul>
+            <li>
+              <a class="dropdown-item" href="electronic-1.html">Refrigerator</a>
             </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Shop
-              </a>
-              <ul class="dropdown-menu">
-                <li>
-                  <a class="dropdown-item" href="shop-grid.html">Shop Grid</a>
-                </li>
-
-                <li>
-                  <a class="dropdown-item" href="shop-single.html"
-                    >Shop Single</a
-                  >
-                </li>
-
-                <li>
-                  <a class="dropdown-item" href="checkout.html">Checkout</a>
-                </li>
-              </ul>
+            <li>
+              <a class="dropdown-item" href="phone-1.html">Mobile Phones</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="blog-single.html"
-                >Blog</a
-              >
+            <li>
+              <a class="dropdown-item" href="electronic-2.html">Gaming Console</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="contact.html"
-                >Contact Us</a
-              >
+            <li>
+              <a class="dropdown-item" href="printer-1.html">Pirnters</a>
+            </li>
+            <li><a class="dropdown-item" href="camera-2.html">Cameras</a></li>
+            <li>
+              <a class="dropdown-item" href="television-2.html">Television</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="utensil-1.html">Kitchen Gadgets</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="electronic-3.html">Room Gadgets</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="electronic-4.html">VR Console</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="electronic-2.html">Air Conditioners</a>
             </li>
           </ul>
         </div>
-        <div class="social-handles flex-1">
-          <li class="border">
-            <a href="#" title="Facebook"><i class="bx bxl-facebook"></i></a>
-          </li>
-          <li class="border">
-            <a href="#" title="Twitter"><i class="bx bxl-twitter"></i></a>
-          </li>
-          <li class="border">
-            <a href="#" title="Instagram"><i class="bx bxl-instagram"></i></a>
-          </li>
-          <li class="border">
-            <a href="#" title="Linkedin"><i class="bx bxl-linkedin"></i></a>
-          </li>
-        </div>
       </div>
-    </nav>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+          </li>
 
-    <!-- ------------------- Fourth Navigation Bar Start ------------------------- -->
-    <nav class="fourth-nav-menu flex-2 border">
-      <h1>Frequent Ask Question(s)</h1>
-      <div class="box flex-1">
-        <a href="index.html"
-          ><i class="bi bi-house-fill"></i> <span>Home</span></a
-        >
-        <span class="r-arrow">></span>
-        <p>FAQs</p>
-      </div>
-    </nav>
-    <!-- ------------------- Second Navigation Bar End ------------------------ -->
-    <!-- ------------------- Third Navigation Bar End --------------------------- -->
-    <!-- ------------------- Fourth Navigation Bar End ------------------------- -->
-
-    <!-- =================== FAQ Section Start ====================== -->
-    <section class="container-fluid faq-container">
-      <div class="row">
-        <div class="col-12">
-          <div class="headings text-center">
-            <h1>Haven't You Found The Answer? <br />Ask Us Your Question!</h1>
-            <span class="bar-1"></span>
-          </div>
-          <p class="heading-info text-center">
-            We normally respond within 2 business days. Most popular questions
-            will <br />
-            appear on this page.
-          </p>
-        </div>
-      </div>
-
-      <div class="accordion accordion-flush faq-box" id="accordionFlushExample">
-        <div class="faq-box-content accordion-item">
-          <h2 class="accordion-header flex-2">
-            <button
-              class="accordion-button collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#flush-collapseOne"
-              aria-expanded="false"
-              aria-controls="flush-collapseOne"
-            >
-              What payment methods do you accept?
-            </button>
-          </h2>
-          <div
-            id="flush-collapseOne"
-            class="accordion-collapse collapse"
-            data-bs-parent="#accordionFlushExample"
-          >
-            <div class="accordion-body">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Corrupti nam repellendus molestiae omnis praesentium natus vitae
-                deleniti dolor nulla dolorem, sunt illum quas ex tempore magni
-                cupiditate, reiciendis tempora delectus. Qui veniam asperiores
-                nobis fuga inventore magni eius dolore ut! Consectetur amet
-                eligendi quaerat omnis eius, at esse vero nobis.
-              </p>
-              <p class="mt-5">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Placeat enim, hic laborum quos dolores at error dignissimos
-                vitae, cumque qui quod laudantium odit eum alias voluptatum?
-                Iste nihil tempore libero alias dolores qui officia! Suscipit,
-                nobis. Rerum soluta sunt, itaque voluptatem ea odit.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="faq-box-content accordion-item">
-          <h2 class="accordion-header">
-            <button
-              class="accordion-button collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#flush-collapseTwo"
-              aria-expanded="false"
-              aria-controls="flush-collapseTwo"
-            >
-              How long will delivery take?
-            </button>
-          </h2>
-          <div
-            id="flush-collapseTwo"
-            class="accordion-collapse collapse"
-            data-bs-parent="#accordionFlushExample"
-          >
-            <div class="accordion-body">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Corrupti nam repellendus molestiae omnis praesentium natus vitae
-                deleniti dolor nulla dolorem, sunt illum quas ex tempore magni
-                cupiditate, reiciendis tempora delectus. Qui veniam asperiores
-                nobis fuga inventore magni eius dolore ut! Consectetur amet
-                eligendi quaerat omnis eius, at esse vero nobis.
-              </p>
-              <p class="mt-5">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Placeat enim, hic laborum quos dolores at error dignissimos
-                vitae, cumque qui quod laudantium odit eum alias voluptatum?
-                Iste nihil tempore libero alias dolores qui officia! Suscipit,
-                nobis. Rerum soluta sunt, itaque voluptatem ea odit.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="faq-box-content accordion-item">
-          <h2 class="accordion-header">
-            <button
-              class="accordion-button collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#flush-collapseThree"
-              aria-expanded="false"
-              aria-controls="flush-collapseThree"
-            >
-              Do I need an account to place an order?
-            </button>
-          </h2>
-          <div
-            id="flush-collapseThree"
-            class="accordion-collapse collapse"
-            data-bs-parent="#accordionFlushExample"
-          >
-            <div class="accordion-body">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Corrupti nam repellendus molestiae omnis praesentium natus vitae
-                deleniti dolor nulla dolorem, sunt illum quas ex tempore magni
-                cupiditate, reiciendis tempora delectus. Qui veniam asperiores
-                nobis fuga inventore magni eius dolore ut! Consectetur amet
-                eligendi quaerat omnis eius, at esse vero nobis.
-              </p>
-              <p class="mt-5">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Placeat enim, hic laborum quos dolores at error dignissimos
-                vitae, cumque qui quod laudantium odit eum alias voluptatum?
-                Iste nihil tempore libero alias dolores qui officia! Suscipit,
-                nobis. Rerum soluta sunt, itaque voluptatem ea odit.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="faq-box-content accordion-item">
-          <h2 class="accordion-header">
-            <button
-              class="accordion-button collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#flush-collapseFour"
-              aria-expanded="false"
-              aria-controls="flush-collapseFour"
-            >
-              Do you have discount for return customer?
-            </button>
-          </h2>
-          <div
-            id="flush-collapseFour"
-            class="accordion-collapse collapse"
-            data-bs-parent="#accordionFlushExample"
-          >
-            <div class="accordion-body">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Corrupti nam repellendus molestiae omnis praesentium natus vitae
-                deleniti dolor nulla dolorem, sunt illum quas ex tempore magni
-                cupiditate, reiciendis tempora delectus. Qui veniam asperiores
-                nobis fuga inventore magni eius dolore ut! Consectetur amet
-                eligendi quaerat omnis eius, at esse vero nobis.
-              </p>
-              <p class="mt-5">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Placeat enim, hic laborum quos dolores at error dignissimos
-                vitae, cumque qui quod laudantium odit eum alias voluptatum?
-                Iste nihil tempore libero alias dolores qui officia! Suscipit,
-                nobis. Rerum soluta sunt, itaque voluptatem ea odit.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="faq-box-content accordion-item">
-          <h2 class="accordion-header">
-            <button
-              class="accordion-button collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#flush-collapseFive"
-              aria-expanded="false"
-              aria-controls="flush-collapseFive"
-            >
-              What are the product refund conditions?
-            </button>
-          </h2>
-          <div
-            id="flush-collapseFive"
-            class="accordion-collapse collapse"
-            data-bs-parent="#accordionFlushExample"
-          >
-            <div class="accordion-body">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Corrupti nam repellendus molestiae omnis praesentium natus vitae
-                deleniti dolor nulla dolorem, sunt illum quas ex tempore magni
-                cupiditate, reiciendis tempora delectus. Qui veniam asperiores
-                nobis fuga inventore magni eius dolore ut! Consectetur amet
-                eligendi quaerat omnis eius, at esse vero nobis.
-              </p>
-              <p class="mt-5">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Placeat enim, hic laborum quos dolores at error dignissimos
-                vitae, cumque qui quod laudantium odit eum alias voluptatum?
-                Iste nihil tempore libero alias dolores qui officia! Suscipit,
-                nobis. Rerum soluta sunt, itaque voluptatem ea odit.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- =================== FAQ Section End ====================== -->
-
-    <!-- ================== Footer Section Start ======================== -->
-    <section class="container-fluid footer-container">
-      <div class="first-footer-cont">
-        <div class="first-footer-box">
-          <a href="index.html"
-            ><img
-              src="Images/footer-logo.png"
-              alt="Footer Logo"
-              class="footer-logo"
-          /></a>
-          <div class="sub-cont">
-            <div class="subscribe-info text-center">
-              <h1>Subscribe to our Newsletter</h1>
-              <p>Get all the latest information, sales and offers.</p>
-            </div>
-            <div class="subscribe-form">
-              <form action="">
-                <input
-                  type="email"
-                  name="email"
-                  placeholder="Email address here..."
-                  required
-                />
-                <button type="submit" class="sub-send flex-1">
-                  <i class="bi bi-send-fill"></i>
-                </button>
-              </form>
-            </div>
-          </div>
-        </div>
-        <div class="second-footer-cont">
-          <div class="second-footer-box">
-            <div class="second-footer-box-heading">
-              <h1>Get in touch with us</h1>
-              <span class="bar-3"></span>
-            </div>
-            <p>Phone: +1 123 456 7897</p>
-            <p>Monday-Friday: 9:00am - 5:00pm</p>
-            <p>Saturday: 9:00am - 3:00pm</p>
-            <p>ike_shop@email.com</p>
-          </div>
-
-          <div class="second-footer-box" style="width: 300px">
-            <div class="second-footer-box-heading">
-              <h1>Get in touch with us</h1>
-              <span class="bar-3"></span>
-            </div>
-            <a href="#" class="cont-1">
-              <i class="bi bi-apple"></i>
-              <div class="box">
-                <p>Download on the</p>
-                <h1>Apple Store</h1>
-              </div>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Pages
             </a>
-            <a href="#" class="cont-1">
-              <i class="bi bi-google-play"></i>
-              <div class="box">
-                <p>Download on the</p>
-                <h1>Google Play</h1>
-              </div>
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" href="about-us.html">About Us</a>
+              </li>
+              <li>
+                <a class="dropdown-item active" href="faq.html">FAQs</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="login.html">Login</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="register.html">Register</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="mail-sucess.html">Mail Success</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="404.html">404 Error</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Shop
             </a>
-          </div>
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" href="shop-grid.html">Shop Grid</a>
+              </li>
 
-          <div class="second-footer-box" style="width: 300px">
-            <div class="second-footer-box-heading">
-              <h1>Information</h1>
-              <span class="bar-3"></span>
-            </div>
-            <a href="#">About Us</a>
-            <a href="#">Contact Us</a>
-            <a href="#">Download</a>
-            <a href="#">Site map</a>
-            <a href="#">FAQS</a>
-          </div>
+              <li>
+                <a class="dropdown-item" href="shop-single.html">Shop Single</a>
+              </li>
 
-          <div class="second-footer-box" style="width: 300px">
-            <div class="second-footer-box-heading">
-              <h1>Shop Department</h1>
-              <span class="bar-3"></span>
-            </div>
-            <a href="#">Computers & Accessories</a>
-            <a href="#">Smart Phones & Tablets</a>
-            <a href="#">TV, Video & Sounds</a>
-            <a href="#">Cameras, Photo & Video</a>
-            <a href="#">Headphones</a>
-          </div>
+              <li>
+                <a class="dropdown-item" href="checkout.html">Checkout</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="blog-single.html">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="contact.html">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+      <div class="social-handles flex-1">
+        <li class="border">
+          <a href="#" title="Facebook"><i class="bx bxl-facebook"></i></a>
+        </li>
+        <li class="border">
+          <a href="#" title="Twitter"><i class="bx bxl-twitter"></i></a>
+        </li>
+        <li class="border">
+          <a href="#" title="Instagram"><i class="bx bxl-instagram"></i></a>
+        </li>
+        <li class="border">
+          <a href="#" title="Linkedin"><i class="bx bxl-linkedin"></i></a>
+        </li>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ------------------- Fourth Navigation Bar Start ------------------------- -->
+  <nav class="fourth-nav-menu flex-2 border">
+    <h1>Frequent Ask Question(s)</h1>
+    <div class="box flex-1">
+      <a href="index.html"><i class="bi bi-house-fill"></i> <span>Home</span></a>
+      <span class="r-arrow">></span>
+      <p>FAQs</p>
+    </div>
+  </nav>
+  <!-- ------------------- Second Navigation Bar End ------------------------ -->
+  <!-- ------------------- Third Navigation Bar End --------------------------- -->
+  <!-- ------------------- Fourth Navigation Bar End ------------------------- -->
+
+  <!-- =================== FAQ Section Start ====================== -->
+  <section class="container-fluid faq-container">
+    <div class="row">
+      <div class="col-12">
+        <div class="headings text-center">
+          <h1>Haven't You Found The Answer? <br />Ask Us Your Question!</h1>
+          <span class="bar-1"></span>
         </div>
-        <div class="third-footer-box">
-          <div class="box-1">
-            <p>We accept:</p>
-            <img src="Images/credit-cards-footer.png" alt="" />
-          </div>
-          <div class="box-2 text-center">
-            <p>Designed and Developed by:</p>
-            <a href="#">Isaacski CompuTech</a>
-          </div>
-          <div class="box-3">
-            <p>Follow us on:</p>
-            <div class="social-handles-2">
-              <a href="#" title="Facebook"><i class="bi bi-facebook"></i></a>
-              <a href="#" title="Linkedin"><i class="bi bi-linkedin"></i></a>
-              <a href="#" title="YouTube"><i class="bi bi-youtube"></i></a>
-              <a href="#" title="Github"><i class="bi bi-github"></i></a>
-            </div>
+        <p class="heading-info text-center">
+          We normally respond within 2 business days. Most popular questions
+          will <br />
+          appear on this page.
+        </p>
+      </div>
+    </div>
+
+    <div class="accordion accordion-flush faq-box" id="accordionFlushExample">
+      <div class="faq-box-content accordion-item">
+        <h2 class="accordion-header flex-2">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+            What payment methods do you accept?
+          </button>
+        </h2>
+        <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Corrupti nam repellendus molestiae omnis praesentium natus vitae
+              deleniti dolor nulla dolorem, sunt illum quas ex tempore magni
+              cupiditate, reiciendis tempora delectus. Qui veniam asperiores
+              nobis fuga inventore magni eius dolore ut! Consectetur amet
+              eligendi quaerat omnis eius, at esse vero nobis.
+            </p>
+            <p class="mt-5">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Placeat enim, hic laborum quos dolores at error dignissimos
+              vitae, cumque qui quod laudantium odit eum alias voluptatum?
+              Iste nihil tempore libero alias dolores qui officia! Suscipit,
+              nobis. Rerum soluta sunt, itaque voluptatem ea odit.
+            </p>
           </div>
         </div>
       </div>
-    </section>
-    <!-- =================== Footer Section End ===================== -->
+      <div class="faq-box-content accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+            How long will delivery take?
+          </button>
+        </h2>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Corrupti nam repellendus molestiae omnis praesentium natus vitae
+              deleniti dolor nulla dolorem, sunt illum quas ex tempore magni
+              cupiditate, reiciendis tempora delectus. Qui veniam asperiores
+              nobis fuga inventore magni eius dolore ut! Consectetur amet
+              eligendi quaerat omnis eius, at esse vero nobis.
+            </p>
+            <p class="mt-5">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Placeat enim, hic laborum quos dolores at error dignissimos
+              vitae, cumque qui quod laudantium odit eum alias voluptatum?
+              Iste nihil tempore libero alias dolores qui officia! Suscipit,
+              nobis. Rerum soluta sunt, itaque voluptatem ea odit.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="faq-box-content accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+            Do I need an account to place an order?
+          </button>
+        </h2>
+        <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Corrupti nam repellendus molestiae omnis praesentium natus vitae
+              deleniti dolor nulla dolorem, sunt illum quas ex tempore magni
+              cupiditate, reiciendis tempora delectus. Qui veniam asperiores
+              nobis fuga inventore magni eius dolore ut! Consectetur amet
+              eligendi quaerat omnis eius, at esse vero nobis.
+            </p>
+            <p class="mt-5">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Placeat enim, hic laborum quos dolores at error dignissimos
+              vitae, cumque qui quod laudantium odit eum alias voluptatum?
+              Iste nihil tempore libero alias dolores qui officia! Suscipit,
+              nobis. Rerum soluta sunt, itaque voluptatem ea odit.
+            </p>
+          </div>
+        </div>
+      </div>
 
-    <!-- Go up button Start -->
-    <a href="#top" class="go-top" data-go-top>
-      <i class="bx bxs-up-arrow"></i>
-    </a>
-    <!-- Go up button End -->
-    <!-- =============== Bootstrap JS CDN ============ -->
-    <script src="./lib/bootstrap.bundle.js"></script>
-    <!-- =============== jQuery CDN Link ============= -->
-    <script src="lib/jquery.js"></script>
+      <div class="faq-box-content accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+            Do you have discount for return customer?
+          </button>
+        </h2>
+        <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Corrupti nam repellendus molestiae omnis praesentium natus vitae
+              deleniti dolor nulla dolorem, sunt illum quas ex tempore magni
+              cupiditate, reiciendis tempora delectus. Qui veniam asperiores
+              nobis fuga inventore magni eius dolore ut! Consectetur amet
+              eligendi quaerat omnis eius, at esse vero nobis.
+            </p>
+            <p class="mt-5">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Placeat enim, hic laborum quos dolores at error dignissimos
+              vitae, cumque qui quod laudantium odit eum alias voluptatum?
+              Iste nihil tempore libero alias dolores qui officia! Suscipit,
+              nobis. Rerum soluta sunt, itaque voluptatem ea odit.
+            </p>
+          </div>
+        </div>
+      </div>
 
-    <!-- =============== Owl Carousel JS CDN ============ -->
-    <script src="./lib/owl.carousel.min.js"></script>
+      <div class="faq-box-content accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+            What are the product refund conditions?
+          </button>
+        </h2>
+        <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Corrupti nam repellendus molestiae omnis praesentium natus vitae
+              deleniti dolor nulla dolorem, sunt illum quas ex tempore magni
+              cupiditate, reiciendis tempora delectus. Qui veniam asperiores
+              nobis fuga inventore magni eius dolore ut! Consectetur amet
+              eligendi quaerat omnis eius, at esse vero nobis.
+            </p>
+            <p class="mt-5">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Placeat enim, hic laborum quos dolores at error dignissimos
+              vitae, cumque qui quod laudantium odit eum alias voluptatum?
+              Iste nihil tempore libero alias dolores qui officia! Suscipit,
+              nobis. Rerum soluta sunt, itaque voluptatem ea odit.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- =================== FAQ Section End ====================== -->
 
-    <!-- ============== Script JS Link ============= -->
-    <script src="./JS/script.js"></script>
-  </body>
+  <!-- ================== Footer Section Start ======================== -->
+  <section class="container-fluid footer-container">
+    <div class="first-footer-cont">
+      <div class="first-footer-box">
+        <a href="index.html"><img src="Images/footer-logo.png" alt="Footer Logo" class="footer-logo" /></a>
+        <div class="sub-cont">
+          <div class="subscribe-info text-center">
+            <h1>Subscribe to our Newsletter</h1>
+            <p>Get all the latest information, sales and offers.</p>
+          </div>
+          <div class="subscribe-form">
+            <form action="">
+              <input type="email" name="email" placeholder="Email address here..." required />
+              <button type="submit" class="sub-send flex-1">
+                <i class="bi bi-send-fill"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="second-footer-cont">
+        <div class="second-footer-box">
+          <div class="second-footer-box-heading">
+            <h1>Get in touch with us</h1>
+            <span class="bar-3"></span>
+          </div>
+          <p>Phone: (+233) 549 175 604</p>
+          <p>Monday-Friday: 9:00am - 5:00pm</p>
+          <p>Saturday: 9:00am - 3:00pm</p>
+          <p>isaacskikrams@gmail.com</p>
+        </div>
+
+        <div class="second-footer-box" style="width: 300px">
+          <div class="second-footer-box-heading">
+            <h1>Get in touch with us</h1>
+            <span class="bar-3"></span>
+          </div>
+          <a href="#" class="cont-1">
+            <i class="bi bi-apple"></i>
+            <div class="box">
+              <p>Download on the</p>
+              <h1>Apple Store</h1>
+            </div>
+          </a>
+          <a href="#" class="cont-1">
+            <i class="bi bi-google-play"></i>
+            <div class="box">
+              <p>Download on the</p>
+              <h1>Google Play</h1>
+            </div>
+          </a>
+        </div>
+
+        <div class="second-footer-box" style="width: 300px">
+          <div class="second-footer-box-heading">
+            <h1>Information</h1>
+            <span class="bar-3"></span>
+          </div>
+          <a href="#">About Us</a>
+          <a href="#">Contact Us</a>
+          <a href="#">Download</a>
+          <a href="#">Site map</a>
+          <a href="#">FAQS</a>
+        </div>
+
+        <div class="second-footer-box" style="width: 300px">
+          <div class="second-footer-box-heading">
+            <h1>Shop Department</h1>
+            <span class="bar-3"></span>
+          </div>
+          <a href="#">Computers & Accessories</a>
+          <a href="#">Smart Phones & Tablets</a>
+          <a href="#">TV, Video & Sounds</a>
+          <a href="#">Cameras, Photo & Video</a>
+          <a href="#">Headphones</a>
+        </div>
+      </div>
+      <div class="third-footer-box">
+        <div class="box-1">
+          <p>We accept:</p>
+          <img src="Images/credit-cards-footer.png" alt="" />
+        </div>
+        <div class="box-2 text-center">
+          <p>Designed and Developed by:</p>
+          <a href="#">Isaacski Krams</a>
+        </div>
+        <div class="box-3">
+          <p>Follow us on:</p>
+          <div class="social-handles-2">
+            <a href="https://www.facebook.com/isaacski.krams.3" target="_blank" title="Facebook"><i
+                class="bi bi-facebook"></i></a>
+            <a href="https://www.linkedin.com/in/isaacski.2001" target="_blank" title="Linkedin"><i
+                class="bi bi-linkedin"></i></a>
+            <a href="https://www.youtube.com/Isaacski" target="_blank" title="YouTube"><i class="bi bi-youtube"></i></a>
+            <a href="https://www.github.com/Isaacski1" target="_blank" title="Github"><i class="bi bi-github"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- =================== Footer Section End ===================== -->
+
+  <!-- Go up button Start -->
+  <a href="#top" class="go-top" data-go-top>
+    <i class="bx bxs-up-arrow"></i>
+  </a>
+  <!-- Go up button End -->
+  <!-- =============== Bootstrap JS CDN ============ -->
+  <script src="./lib/bootstrap.bundle.js"></script>
+  <!-- =============== jQuery CDN Link ============= -->
+  <script src="lib/jquery.js"></script>
+
+  <!-- =============== Owl Carousel JS CDN ============ -->
+  <script src="./lib/owl.carousel.min.js"></script>
+
+  <!-- ============== Script JS Link ============= -->
+  <script src="./JS/script.js"></script>
+</body>
+
 </html>

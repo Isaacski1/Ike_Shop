@@ -35,12 +35,8 @@
       href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
     />
   </head>
+
   <body>
-    <!-- =========== Background Pre-loader Start ========== -->
-    <div class="backgroud-preloader">
-      <img src="Images/loading.gif" class="loading" />
-    </div>
-    <!-- =========== Background Pre-loader End ========== -->
     <!-- ------------------- First Navigation Bar Start ---------------------- -->
     <nav class="flex-2 first-nav_menu">
       <div class="box-1 flex-1">
@@ -154,7 +150,9 @@
         </div>
 
         <!-- Checkout  -->
-        <a class="proceed-checkout-btn" href="checkout.html">Checkout</a>
+        <button class="proceed-checkout-btn" onclick="checkoutBtn()">
+          Checkout
+        </button>
       </div>
       <!-- ==================== Cart Section End =================== -->
     </nav>
@@ -346,87 +344,38 @@
     <!-- ------------------- Third Navigation Bar End --------------------------- -->
     <!-- ------------------- Fourth Navigation Bar End ------------------------- -->
 
-    <!-- ========================= Login Section Start ========================= -->
+    <!-- ========================= Signup Section Start ========================= -->
     <section class="container-fluid login-section">
       <div class="row">
         <div class="col-12 log-in-container">
-          <h1 class="log-in-head">Don't have account? Register for free</h1>
-          <p>
-            You can signup using your social media accounts or email address
-          </p>
+          <h1 class="log-in-head text-center">
+            Don't have account? Register for free
+          </h1>
 
-          <div class="social-media">
-            <a href="#" class="facebook flex-1" title="Login using Facebook">
-              <i class="bx bxl-facebook"></i>
-              <span>Facebook login</span>
-            </a>
-            <a href="#" class="twitter flex-1" title="Login using Twitter">
-              <i class="bx bxl-twitter"></i>
-              <span>Twitter login</span>
-            </a>
-            <a href="#" class="google flex-1" title="Login using Google">
-              <i class="bx bxl-google"></i>
-              <span>Google login</span>
-            </a>
-          </div>
-
-          <div class="or flex-2 mt-5">
-            <span class="bar"></span>
-            <p>Or</p>
-            <span class="bar"></span>
-          </div>
-          <!-- Login form -->
-          <form action="" class="login-form">
+          <!-- Signup form -->
+          <form action="" class="login-form" onsubmit="return validateSubmit()">
             <div class="row input-cont">
               <div class="col-md input-box mt-5 position-relative">
-                <label for="first_name">First Name <span>*</span></label>
+                <label for="username">Username <span>*</span></label>
                 <input
                   class="login-input"
-                  type="name"
-                  name="first_name"
-                  id="contact-first_name"
-                  onkeyup="validateFirstName()"
+                  type="username"
+                  name="Username"
+                  id="contact-username"
+                  onkeyup="validateUsername()"
                 />
-                <span id="first-name-error" class="contact-error"></span>
+                <span id="username-error" class="contact-error"></span>
               </div>
-
-              <div class="col-md input-box mt-5 position-relative">
-                <label for="last_name">Last Name <span>*</span></label>
-                <input
-                  class="login-input"
-                  type="name"
-                  name="last_name"
-                  id="contact-last_name"
-                  onkeyup="validateLastName()"
-                />
-                <span id="last-name-error" class="contact-error"></span>
-              </div>
-            </div>
-
-            <div class="row input-cont">
               <div class="col-md input-box mt-5 position-relative">
                 <label for="email">Email Address <span>*</span></label>
                 <input
                   class="login-input"
                   type="email"
                   name="email"
-                  id="contact-email"
+                  id="contact-email signup-email"
                   onkeyup="validateEmail()"
                 />
                 <span id="email-error" class="contact-error"></span>
-              </div>
-
-              <div class="col-md input-box mt-5 position-relative">
-                <label for="Phone">Phone Number <span>*</span></label>
-                <input
-                  class="login-input"
-                  maxlength="10"
-                  type="phone"
-                  name="phone"
-                  id="contact-phone"
-                  onkeyup="validatePhone()"
-                />
-                <span id="phone-error" class="contact-error"></span>
               </div>
             </div>
 
@@ -434,12 +383,16 @@
               <div class="col-md input-box mt-5 position-relative">
                 <label for="Password">Password <span>*</span></label>
                 <input
-                  class="login-input"
+                  class="login-input position-relative"
                   type="password"
                   name="password"
-                  id="contact-password"
+                  id="contact-password signup-password"
                   onkeyup="validatePassword()"
                 />
+                <i
+                  class="bi bi-eye-slash toggle-password"
+                  id="toggle-password"
+                ></i>
                 <span id="password-error" class="contact-error"></span>
               </div>
 
@@ -451,16 +404,20 @@
                   class="login-input"
                   type="password"
                   name="password"
-                  id="contact-repeat-password"
+                  id="contact-repeat-password signup-confirm-password"
                   onkeyup="validatePasswordAgain()"
                 />
+                <i
+                  class="bi bi-eye-slash toggle-password"
+                  id="toggle-password-1"
+                ></i>
                 <span id="password_again-error" class="contact-error"></span>
               </div>
             </div>
 
             <div class="input-box position-relative">
-              <button class="login-btn" onclick="return validateSubmit()">
-                <a href="signup-success.html">Create Account</a>
+              <button class="login-btn" id="signup-btn" onclick="signup()">
+                Create Account
               </button>
               <span id="submit-error" class="submit-error"></span>
             </div>
@@ -510,10 +467,10 @@
               <h1>Get in touch with us</h1>
               <span class="bar-3"></span>
             </div>
-            <p>Phone: +1 123 456 7897</p>
+            <p>Phone: (+233) 549 175 604</p>
             <p>Monday-Friday: 9:00am - 5:00pm</p>
             <p>Saturday: 9:00am - 3:00pm</p>
-            <p>ike_shop@email.com</p>
+            <p>isaacskikrams@gmail.com</p>
           </div>
 
           <div class="second-footer-box" style="width: 300px">
@@ -568,15 +525,35 @@
           </div>
           <div class="box-2 text-center">
             <p>Designed and Developed by:</p>
-            <a href="#">Isaacski CompuTech</a>
+            <a href="#">Isaacski Krams</a>
           </div>
           <div class="box-3">
             <p>Follow us on:</p>
             <div class="social-handles-2">
-              <a href="#" title="Facebook"><i class="bi bi-facebook"></i></a>
-              <a href="#" title="Linkedin"><i class="bi bi-linkedin"></i></a>
-              <a href="#" title="YouTube"><i class="bi bi-youtube"></i></a>
-              <a href="#" title="Github"><i class="bi bi-github"></i></a>
+              <a
+                href="https://www.facebook.com/isaacski.krams.3"
+                target="_blank"
+                title="Facebook"
+                ><i class="bi bi-facebook"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/isaacski.2001"
+                target="_blank"
+                title="Linkedin"
+                ><i class="bi bi-linkedin"></i
+              ></a>
+              <a
+                href="https://www.youtube.com/Isaacski"
+                target="_blank"
+                title="YouTube"
+                ><i class="bi bi-youtube"></i
+              ></a>
+              <a
+                href="https://www.github.com/Isaacski1"
+                target="_blank"
+                title="Github"
+                ><i class="bi bi-github"></i
+              ></a>
             </div>
           </div>
         </div>
@@ -599,5 +576,6 @@
 
     <!-- ============== Script JS Link ============= -->
     <script src="./JS/script.js"></script>
+    <script src="./JS/firebase-signup.js"></script>
   </body>
 </html>

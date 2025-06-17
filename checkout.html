@@ -3,33 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Shop various products at Ike_shop Enterprise. Free shipping on orders over $100."
-    />
-    <meta
-      name="keyword"
-      content="e-commerce, online shopping, products, categories, online store, buy online, buy online, shop now, deals, discount, free shipping, gift ideas, best sellers, new arrivals, smartphones, laptops, computers, tablets, TVs, gaming console, kitchen appliances, elctronics, gadgets, gaming, audio, video, software, apple products, samsung smartphones, "
-    />
-    <meta
-      name="author"
-      content="Isaacski, Krams, Isaac, Krampah, Isaac Krampah"
-    />
-    <meta name="robots" content="index, follow" />
-    <meta
-      property="og:title"
-      content="Buy Products Online | Ike_Shop Enterprise"
-    />
-    <meta
-      property="og:description"
-      content="Shop various products at Ike_Shop Enterprise. Free shipping on orders over $100"
-    />
-    <meta
-      property="og:image"
-      content="c:\Users\ISAAC KRAMPAH\Desktop\IKE_SHOP Website\Images\logo.png"
-    />
-    <meta property="og:url" content="https://isaacski1.github.io/Ike_Shop" />
-    <meta property="og:Ike_Shop" content="Ike_Shop Enterprise" />
     <title>Shop Single | Ike_Shop</title>
     <!-- ============= Fav Icon =============== -->
     <link rel="shortcut icon" href="Images/fav_icon.png" type="image/x-icon" />
@@ -64,11 +37,6 @@
   </head>
 
   <body>
-    <!-- =========== Background Pre-loader Start ========== -->
-    <div class="backgroud-preloader">
-      <img src="Images/loading.gif" class="loading" />
-    </div>
-    <!-- =========== Background Pre-loader End ========== -->
     <!-- ------------------- First Navigation Bar Start ---------------------- -->
     <nav class="flex-2 first-nav_menu">
       <div class="box-1 flex-1">
@@ -182,7 +150,9 @@
         </div>
 
         <!-- Checkout  -->
-        <a class="proceed-checkout-btn" href="checkout.html">Checkout</a>
+        <button class="proceed-checkout-btn" onclick="checkoutBtn()">
+          Checkout
+        </button>
       </div>
       <!-- ==================== Cart Section End =================== -->
     </nav>
@@ -380,154 +350,9 @@
     <!-- ====================== Checkout Section Start ======================== -->
     <section class="container-fluid checkout">
       <div class="row">
-        <div class="col-lg-8 col-12 box-1 p-5">
+        <div class="col-lg-6 col-12 box-1 p-5">
           <div class="accordion" id="accordionPanelsStayOpenExample">
             <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button
-                  class="accordion-button"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#panelsStayOpen-collapseOne"
-                  aria-expanded="true"
-                  aria-controls="panelsStayOpen-collapseOne"
-                >
-                  Your personal info
-                </button>
-              </h2>
-              <div
-                id="panelsStayOpen-collapseOne"
-                class="accordion-collapse collapse show"
-              >
-                <div class="accordion-body">
-                  <form action="">
-                    <div class="row mt-3 p-3">
-                      <div class="col-md-6 mt-4">
-                        <div class="form-box">
-                          <label for="firstName"
-                            >First Name <span>*</span></label
-                          >
-                          <input
-                            type="text"
-                            name="firstName"
-                            placeholder="First Name"
-                            required
-                          />
-                        </div>
-                      </div>
-                      <div class="col-md-6 mt-4">
-                        <div class="form-box">
-                          <label for="lastName">Last Name <span>*</span></label>
-                          <input
-                            type="text"
-                            name="lastName"
-                            placeholder="Last Name"
-                            required
-                          />
-                        </div>
-                      </div>
-
-                      <div class="col-md-6 mt-4">
-                        <div class="form-box">
-                          <label for="email">Email <span>*</span></label>
-                          <input
-                            type="email"
-                            name="email"
-                            placeholder="Email Address"
-                            required
-                          />
-                        </div>
-                      </div>
-                      <div class="col-md-6 mt-4">
-                        <div class="form-box">
-                          <label for="phone">Phone number <span>*</span></label>
-                          <input
-                            type="phone"
-                            name="phone"
-                            placeholder="Phone number"
-                            required
-                          />
-                        </div>
-                      </div>
-                      <div class="col-md-12 mt-4">
-                        <div class="form-box">
-                          <label for="mail"
-                            >Mailing Address <span>*</span></label
-                          >
-                          <input
-                            type="text"
-                            name="mail"
-                            placeholder="Mailing Address"
-                            required
-                          />
-                        </div>
-                      </div>
-
-                      <div class="col-md-6 mt-4">
-                        <div class="form-box">
-                          <label for="city">City <span>*</span></label>
-                          <input
-                            type="text"
-                            name="city"
-                            placeholder="City"
-                            required
-                          />
-                        </div>
-                      </div>
-
-                      <div class="col-md-6 mt-4">
-                        <div class="form-box">
-                          <label for="zipCode">Zip Code <span>*</span></label>
-                          <input
-                            type="text"
-                            name="zipCode"
-                            placeholder="Zip code"
-                            required
-                          />
-                        </div>
-                      </div>
-
-                      <div class="col-md-6 mt-4">
-                        <div class="form-box">
-                          <label for="country">Country <span>*</span></label>
-                          <input
-                            type="text"
-                            name="country"
-                            placeholder="Your country"
-                            required
-                          />
-                        </div>
-                      </div>
-
-                      <div class="col-md-6 mt-4">
-                        <div class="form-box">
-                          <label for="region">Region <span>*</span></label>
-                          <input
-                            type="text"
-                            name="region"
-                            placeholder="Your Region"
-                            required
-                          />
-                        </div>
-                      </div>
-
-                      <div class="input-box__checkbox">
-                        <input
-                          type="checkbox"
-                          id="checkbox"
-                          class="border"
-                          required
-                        />
-                        <label for="checkbox" class="checkbox"
-                          >My delivery and mailling address are the save</label
-                        >
-                      </div>
-                    </div>
-                  </form>
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item mt-5">
               <h2 class="accordion-header">
                 <button
                   class="accordion-button collapsed"
@@ -542,7 +367,7 @@
               </h2>
               <div
                 id="panelsStayOpen-collapseTwo"
-                class="accordion-collapse collapse"
+                class="accordion-collapse collapse show"
               >
                 <div class="accordion-body">
                   <form action="">
@@ -735,129 +560,36 @@
                 </div>
               </div>
             </div>
-            <div class="accordion-item mt-5">
-              <h2 class="accordion-header">
-                <button
-                  class="accordion-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#panelsStayOpen-collapseThree"
-                  aria-expanded="false"
-                  aria-controls="panelsStayOpen-collapseThree"
-                >
-                  Payment Info
-                </button>
-              </h2>
-              <div
-                id="panelsStayOpen-collapseThree"
-                class="accordion-collapse collapse"
-              >
-                <div class="accordion-body">
-                  <form action="">
-                    <div class="row mt-3">
-                      <div class="col-lg-12 form-box mt-4">
-                        <label for="card_holder_name"
-                          >Cardholder name <span>*</span></label
-                        >
-                        <input
-                          type="text"
-                          name="name"
-                          placeholder="Name on your card"
-                          required
-                        />
-                      </div>
-                    </div>
-
-                    <div class="col-lg-12 form-box mt-4">
-                      <label for="card_number"
-                        >Card number <span>*</span></label
-                      >
-                      <div
-                        class="input-box col-lg-12"
-                        style="border: 1px solid #bbb"
-                      >
-                        <input
-                          type="text"
-                          name="name"
-                          placeholder="0000 0000 0000 0000"
-                          required
-                        />
-                        <img src="Images/Shipping Images/card.png" alt="" />
-                      </div>
-                    </div>
-
-                    <div class="col-lg-12 mt-4">
-                      <div class="form-row">
-                        <div class="form-box">
-                          <label for="date">Exp (Mon) <span>*</span></label>
-                          <input type="text" placeholder="MM" />
-                        </div>
-
-                        <div class="form-box">
-                          <label for="date">Exp (Year) <span>*</span></label>
-                          <input type="text" placeholder="YY" />
-                        </div>
-
-                        <div class="form-box">
-                          <label for="cvc">CVV <span>*</span></label>
-                          <input type="text" placeholder="***" />
-                        </div>
-                      </div>
-                    </div>
-                    <button class="mt-4 pay-btn">Pay Now</button>
-                  </form>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
-        <div class="col-lg-4 col-12 box-2 p-5">
-          <div class="row coupon-box">
-            <div class="col-lg-12 p-5">
-              <form class="coupon">
-                <label>Apply coupon to get discount <span>*</span></label>
-                <div class="box">
-                  <input
-                    type="text"
-                    name="coupon"
-                    placeholder="coupon code"
-                    required
-                  />
-                  <button>apply</button>
-                </div>
-              </form>
-            </div>
+        <main class="col-lg-6 col-12 box-1 p-5 container">
+          <h2>Your Cart Items</h2>
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th>Image</th>
+                <th>Product Name</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Subtotal</th>
+              </tr>
+            </thead>
+            <tbody id="cart-items">
+              <!-- Cart items will be dynamically inserted here -->
+            </tbody>
+          </table>
+          <div class="total">
+            <h3>Total Price: <span id="total-price">GHS 0.00</span></h3>
           </div>
-          <div class="row price-table mt-5">
-            <div class="col-lg-12 p-5">
-              <h1 class="pricing-head border-bottom">
-                Pricing Table <span>*</span>
-              </h1>
-              <div class="box flex-2 mt-4">
-                <p>Sub Total</p>
-                <strong>$144</strong>
-              </div>
-              <div class="box flex-2 mt-4">
-                <p>Delivery Fee</p>
-                <strong>$10.00</strong>
-              </div>
-              <div class="box flex-2 mt-4">
-                <p>Total Shipping</p>
-                <strong>$134</strong>
-              </div>
-              <div class="box flex-2 mt-4">
-                <p>Sub Total</p>
-                <strong>$134</strong>
-              </div>
-              <button>Checkout</button>
-            </div>
-          </div>
-          <div class="row mt-5 banner__img">
-            <div class="col-12 p-2">
-              <img src="Images/banner.jpg" class="img-fluid" />
-            </div>
-          </div>
-        </div>
+          <button
+            id="place-order"
+            type="submit"
+            class="btn btn-primary"
+            onclick="payWithPaystack()"
+          >
+            Place Order
+          </button>
+        </main>
       </div>
     </section>
     <!-- ====================== Checkout Section End ======================== -->
@@ -898,10 +630,10 @@
               <h1>Get in touch with us</h1>
               <span class="bar-3"></span>
             </div>
-            <p>Phone: +1 123 456 7897</p>
+            <p>Phone: (+233) 549 175 604</p>
             <p>Monday-Friday: 9:00am - 5:00pm</p>
             <p>Saturday: 9:00am - 3:00pm</p>
-            <p>ike_shop@email.com</p>
+            <p>isaacskikrams@gmail.com</p>
           </div>
 
           <div class="second-footer-box" style="width: 300px">
@@ -956,15 +688,35 @@
           </div>
           <div class="box-2 text-center">
             <p>Designed and Developed by:</p>
-            <a href="#">Isaacski CompuTech</a>
+            <a href="#">Isaacski Krams</a>
           </div>
           <div class="box-3">
             <p>Follow us on:</p>
             <div class="social-handles-2">
-               <a href="#" title="Facebook"><i class="bi bi-facebook"></i></a>
-              <a href="#" title="Linkedin"><i class="bi bi-linkedin"></i></a>
-              <a href="#" title="YouTube"><i class="bi bi-youtube"></i></a>
-              <a href="#" title="Github"><i class="bi bi-github"></i></a>
+              <a
+                href="https://www.facebook.com/isaacski.krams.3"
+                target="_blank"
+                title="Facebook"
+                ><i class="bi bi-facebook"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/isaacski.2001"
+                target="_blank"
+                title="Linkedin"
+                ><i class="bi bi-linkedin"></i
+              ></a>
+              <a
+                href="https://www.youtube.com/Isaacski"
+                target="_blank"
+                title="YouTube"
+                ><i class="bi bi-youtube"></i
+              ></a>
+              <a
+                href="https://www.github.com/Isaacski1"
+                target="_blank"
+                title="Github"
+                ><i class="bi bi-github"></i
+              ></a>
             </div>
           </div>
         </div>
@@ -987,5 +739,13 @@
 
     <!-- ============== Script JS Link ============= -->
     <script src="./JS/script.js"></script>
+    <script src="./JS/checkout.js"></script>
+    <!-- Paystack Payment Link -->
+    <script src="https://js.paystack.co/v2/inline.js"></script>
+    <script src="./JS/payment.js"></script>
+
+    <!-- Firebase SDKs -->
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js"></script>
   </body>
 </html>

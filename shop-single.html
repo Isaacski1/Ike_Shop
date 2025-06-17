@@ -30,11 +30,6 @@
 </head>
 
 <body>
-   <!-- =========== Background Pre-loader Start ========== -->
-    <div class="backgroud-preloader">
-      <img src="Images/loading.gif" class="loading" />
-    </div>
-    <!-- =========== Background Pre-loader End ========== -->
   <!-- ------------------- First Navigation Bar Start ---------------------- -->
   <nav class="flex-2 first-nav_menu">
     <div class="box-1 flex-1">
@@ -148,7 +143,9 @@
       </div>
 
       <!-- Checkout  -->
-      <a class="proceed-checkout-btn" href="checkout.html">Checkout</a>
+      <button class="proceed-checkout-btn" onclick="checkoutBtn()">
+        Checkout
+      </button>
     </div>
     <!-- ==================== Cart Section End =================== -->
   </nav>
@@ -167,18 +164,18 @@
 
           <ul class="dropdown-menu">
             <li>
-                <a class="dropdown-item" href="computer-1.html">Computers & Laptops</a>
-              </li>
-              <li><a class="dropdown-item" href="electronic-1.html">Refrigerator</a></li>
-              <li><a class="dropdown-item" href="phone-1.html">Mobile Phones</a></li>
-              <li><a class="dropdown-item" href="electronic-2.html">Gaming Console</a></li>
-              <li><a class="dropdown-item" href="printer-1.html">Pirnters</a></li>
-              <li><a class="dropdown-item" href="camera-2.html">Cameras</a></li>
-              <li><a class="dropdown-item" href="television-2.html">Television</a></li>
-              <li><a class="dropdown-item" href="utensil-1.html">Kitchen Gadgets</a></li>
-              <li><a class="dropdown-item" href="electronic-3.html">Room Gadgets</a></li>
-              <li><a class="dropdown-item" href="electronic-4.html">VR Console</a></li>
-              <li><a class="dropdown-item" href="electronic-2.html">Air Conditioners</a></li>
+              <a class="dropdown-item" href="computer-1.html">Computers & Laptops</a>
+            </li>
+            <li><a class="dropdown-item" href="electronic-1.html">Refrigerator</a></li>
+            <li><a class="dropdown-item" href="phone-1.html">Mobile Phones</a></li>
+            <li><a class="dropdown-item" href="electronic-2.html">Gaming Console</a></li>
+            <li><a class="dropdown-item" href="printer-1.html">Pirnters</a></li>
+            <li><a class="dropdown-item" href="camera-2.html">Cameras</a></li>
+            <li><a class="dropdown-item" href="television-2.html">Television</a></li>
+            <li><a class="dropdown-item" href="utensil-1.html">Kitchen Gadgets</a></li>
+            <li><a class="dropdown-item" href="electronic-3.html">Room Gadgets</a></li>
+            <li><a class="dropdown-item" href="electronic-4.html">VR Console</a></li>
+            <li><a class="dropdown-item" href="electronic-2.html">Air Conditioners</a></li>
           </ul>
         </div>
       </div>
@@ -223,7 +220,7 @@
               <li>
                 <a class="dropdown-item" href="shop-grid.html">Shop Grid</a>
               </li>
-              
+
               <li>
                 <a class="dropdown-item" href="shop-single.html">Shop Single</a>
               </li>
@@ -234,10 +231,8 @@
             </ul>
           </li>
           <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="blog-single.html"
-                >Blog</a
-              >
-            </li>
+            <a class="nav-link" aria-current="page" href="blog-single.html">Blog</a>
+          </li>
           <li class="nav-item">
             <a class="nav-link" aria-current="page" href="contact.html">Contact Us</a>
           </li>
@@ -598,7 +593,8 @@
               <i class="bi bi-star-fill"></i>
               <i class="bi bi-star-fill"></i>
             </div>
-            <p class="comment-info">"Fantastic experience! The customer service team was very helpful when I had questions about my order. The product quality exceeded my expectations. A+!"</p>
+            <p class="comment-info">"Fantastic experience! The customer service team was very helpful when I had
+              questions about my order. The product quality exceeded my expectations. A+!"</p>
           </div>
         </div>
 
@@ -614,7 +610,8 @@
               <i class="bi bi-star"></i>
               <i class="bi bi-star"></i>
             </div>
-            <p class="comment-info">"This was my first time ordering from this site, and I’m impressed! The checkout process was easy, and my items arrived in pristine condition. Highly recommend!"</p>
+            <p class="comment-info">"This was my first time ordering from this site, and I’m impressed! The checkout
+              process was easy, and my items arrived in pristine condition. Highly recommend!"</p>
           </div>
         </div>
         <div class="review-comment-box py-5">
@@ -629,7 +626,8 @@
               <i class="bi bi-star-fill"></i>
               <i class="bi bi-star"></i>
             </div>
-            <p class="comment-info">"I found some great products here, but I think the site could benefit from more detailed product descriptions. Overall, a decent shopping experience."</p>
+            <p class="comment-info">"I found some great products here, but I think the site could benefit from more
+              detailed product descriptions. Overall, a decent shopping experience."</p>
           </div>
         </div>
       </div>
@@ -640,119 +638,111 @@
   <!-- ====================== Container one Section End ======================== -->
 
   <!-- ================== Footer Section Start ========================== -->
-   <section class="container-fluid footer-container">
-      <div class="first-footer-cont">
-        <div class="first-footer-box">
-          <a href="index.html"
-            ><img
-              src="Images/footer-logo.png"
-              alt="Footer Logo"
-              class="footer-logo"
-          /></a>
-          <div class="sub-cont">
-            <div class="subscribe-info text-center">
-              <h1>Subscribe to our Newsletter</h1>
-              <p>Get all the latest information, sales and offers.</p>
-            </div>
-            <div class="subscribe-form">
-              <form action="">
-                <input
-                  type="email"
-                  name="email"
-                  placeholder="Email address here..."
-                  required
-                />
-                <button type="submit" class="sub-send flex-1">
-                  <i class="bi bi-send-fill"></i>
-                </button>
-              </form>
-            </div>
+  <section class="container-fluid footer-container">
+    <div class="first-footer-cont">
+      <div class="first-footer-box">
+        <a href="index.html"><img src="Images/footer-logo.png" alt="Footer Logo" class="footer-logo" /></a>
+        <div class="sub-cont">
+          <div class="subscribe-info text-center">
+            <h1>Subscribe to our Newsletter</h1>
+            <p>Get all the latest information, sales and offers.</p>
           </div>
-        </div>
-        <div class="second-footer-cont">
-          <div class="second-footer-box">
-            <div class="second-footer-box-heading">
-              <h1>Get in touch with us</h1>
-              <span class="bar-3"></span>
-            </div>
-            <p>Phone: +1 123 456 7897</p>
-            <p>Monday-Friday: 9:00am - 5:00pm</p>
-            <p>Saturday: 9:00am - 3:00pm</p>
-            <p>ike_shop@email.com</p>
-          </div>
-
-          <div class="second-footer-box" style="width: 300px">
-            <div class="second-footer-box-heading">
-              <h1>Get in touch with us</h1>
-              <span class="bar-3"></span>
-            </div>
-            <a href="#" class="cont-1">
-              <i class="bi bi-apple"></i>
-              <div class="box">
-                <p>Download on the</p>
-                <h1>Apple Store</h1>
-              </div>
-            </a>
-            <a href="#" class="cont-1">
-              <i class="bi bi-google-play"></i>
-              <div class="box">
-                <p>Download on the</p>
-                <h1>Google Play</h1>
-              </div>
-            </a>
-          </div>
-
-          <div class="second-footer-box" style="width: 300px">
-            <div class="second-footer-box-heading">
-              <h1>Information</h1>
-              <span class="bar-3"></span>
-            </div>
-            <a href="#">About Us</a>
-            <a href="#">Contact Us</a>
-            <a href="#">Download</a>
-            <a href="#">Site map</a>
-            <a href="#">FAQS</a>
-          </div>
-
-          <div class="second-footer-box" style="width: 300px">
-            <div class="second-footer-box-heading">
-              <h1>Shop Department</h1>
-              <span class="bar-3"></span>
-            </div>
-            <a href="#">Computers & Accessories</a>
-            <a href="#">Smart Phones & Tablets</a>
-            <a href="#">TV, Video & Sounds</a>
-            <a href="#">Cameras, Photo & Video</a>
-            <a href="#">Headphones</a>
-          </div>
-        </div>
-        <div class="third-footer-box">
-          <div class="box-1">
-            <p>We accept:</p>
-            <img src="Images/credit-cards-footer.png" alt="" />
-          </div>
-          <div class="box-2 text-center">
-            <p>Designed and Developed by:</p>
-            <a href="#">Isaacski CompuTech</a>
-          </div>
-          <div class="box-3">
-            <p>Follow us on:</p>
-            <div class="social-handles-2">
-              <a href="#" title="Facebook"><i class="bi bi-facebook"></i></a>
-              <a href="#" title="Linkedin"><i class="bi bi-linkedin"></i></a>
-              <a href="#" title="YouTube"><i class="bi bi-youtube"></i></a>
-              <a href="#" title="Github"><i class="bi bi-github"></i></a>
-            </div>
+          <div class="subscribe-form">
+            <form action="">
+              <input type="email" name="email" placeholder="Email address here..." required />
+              <button type="submit" class="sub-send flex-1">
+                <i class="bi bi-send-fill"></i>
+              </button>
+            </form>
           </div>
         </div>
       </div>
-    </section>
-    <!-- ================== Footer Section End ========================== -->
-    <!-- Go up button Start -->
-    <a href="#top" class="go-top" data-go-top>
-      <i class="bx bxs-up-arrow"></i>
-    </a>
-    <!-- Go up button End -->
+      <div class="second-footer-cont">
+        <div class="second-footer-box">
+          <div class="second-footer-box-heading">
+            <h1>Get in touch with us</h1>
+            <span class="bar-3"></span>
+          </div>
+          <p>Phone: (+233) 549 175 604</p>
+          <p>Monday-Friday: 9:00am - 5:00pm</p>
+          <p>Saturday: 9:00am - 3:00pm</p>
+          <p>isaacskikrams@gmail.com</p>
+        </div>
+
+        <div class="second-footer-box" style="width: 300px">
+          <div class="second-footer-box-heading">
+            <h1>Get in touch with us</h1>
+            <span class="bar-3"></span>
+          </div>
+          <a href="#" class="cont-1">
+            <i class="bi bi-apple"></i>
+            <div class="box">
+              <p>Download on the</p>
+              <h1>Apple Store</h1>
+            </div>
+          </a>
+          <a href="#" class="cont-1">
+            <i class="bi bi-google-play"></i>
+            <div class="box">
+              <p>Download on the</p>
+              <h1>Google Play</h1>
+            </div>
+          </a>
+        </div>
+
+        <div class="second-footer-box" style="width: 300px">
+          <div class="second-footer-box-heading">
+            <h1>Information</h1>
+            <span class="bar-3"></span>
+          </div>
+          <a href="#">About Us</a>
+          <a href="#">Contact Us</a>
+          <a href="#">Download</a>
+          <a href="#">Site map</a>
+          <a href="#">FAQS</a>
+        </div>
+
+        <div class="second-footer-box" style="width: 300px">
+          <div class="second-footer-box-heading">
+            <h1>Shop Department</h1>
+            <span class="bar-3"></span>
+          </div>
+          <a href="#">Computers & Accessories</a>
+          <a href="#">Smart Phones & Tablets</a>
+          <a href="#">TV, Video & Sounds</a>
+          <a href="#">Cameras, Photo & Video</a>
+          <a href="#">Headphones</a>
+        </div>
+      </div>
+      <div class="third-footer-box">
+        <div class="box-1">
+          <p>We accept:</p>
+          <img src="Images/credit-cards-footer.png" alt="" />
+        </div>
+        <div class="box-2 text-center">
+          <p>Designed and Developed by:</p>
+          <a href="#">Isaacski Krams</a>
+        </div>
+        <div class="box-3">
+          <p>Follow us on:</p>
+          <div class="social-handles-2">
+            <a href="https://www.facebook.com/isaacski.krams.3" target="_blank" title="Facebook"><i
+                class="bi bi-facebook"></i></a>
+            <a href="https://www.linkedin.com/in/isaacski.2001" target="_blank" title="Linkedin"><i
+                class="bi bi-linkedin"></i></a>
+            <a href="https://www.youtube.com/Isaacski" target="_blank" title="YouTube"><i class="bi bi-youtube"></i></a>
+            <a href="https://www.github.com/Isaacski1" target="_blank" title="Github"><i class="bi bi-github"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ================== Footer Section End ========================== -->
+  <!-- Go up button Start -->
+  <a href="#top" class="go-top" data-go-top>
+    <i class="bx bxs-up-arrow"></i>
+  </a>
+  <!-- Go up button End -->
   <!-- =============== Bootstrap JS CDN ============ -->
   <script src="./lib/bootstrap.bundle.js"></script>
   <!-- =============== jQuery CDN Link ============= -->

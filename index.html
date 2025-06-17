@@ -3,36 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Shop various products at Ike_shop Enterprise. Free shipping on orders over $100."
-    />
-    <meta
-      name="keyword"
-      content="e-commerce, online shopping, products, categories, online store, buy online, buy online, shop now, deals, discount, free shipping, gift ideas, best sellers, new arrivals, smartphones, laptops, computers, tablets, TVs, gaming console, kitchen appliances, elctronics, gadgets, gaming, audio, video, software, apple products, samsung smartphones, "
-    />
-    <meta
-      name="author"
-      content="Isaacski, Krams, Isaac, Krampah, Isaac Krampah"
-    />
-    <meta name="robots" content="index, follow" />
-    <meta
-      property="og:title"
-      content="Buy Products Online | Ike_Shop Enterprise"
-    />
-    <meta
-      property="og:description"
-      content="Shop various products at Ike_Shop Enterprise. Free shipping on orders over $100"
-    />
-    <meta
-      property="og:image"
-      content="c:\Users\ISAAC KRAMPAH\Desktop\IKE_SHOP Website\Images\logo.png"
-    />
-    <meta property="og:url" content="https://isaacski1.github.io/Ike_Shop" />
-    <meta property="og:Ike_Shop" content="Ike_Shop Enterprise" />
     <title>IKE_SHOP | Isaacski Template</title>
     <!-- ============= Fav Icon =============== -->
-    <link rel="shortcut icon" href="Images/fav_icon.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="Images/favicon.jpg" type="image/x-icon" />
     <!-- ================== Custom Style Sheet =================== -->
     <link rel="stylesheet" href="./CSS/style.css" />
     <!-- ================== Media Query CDN =================== -->
@@ -62,12 +35,8 @@
       href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
     />
   </head>
+
   <body>
-    <!-- =========== Background Pre-loader Start ========== -->
-    <div class="backgroud-preloader">
-      <img src="Images/loading.gif" class="loading" />
-    </div>
-    <!-- =========== Background Pre-loader End ========== -->
     <!-- ------------------- First Navigation Bar Start ---------------------- -->
     <nav class="flex-2 first-nav_menu">
       <div class="box-1 flex-1">
@@ -106,6 +75,7 @@
           <a class="signup" href="register.html">Sign Up</a>
         </div>
       </div>
+      <p id="user-greeting"></p>
     </nav>
     <!-- ------------------- First Navigation Bar End ---------------------- -->
 
@@ -113,7 +83,7 @@
 
     <nav class="flex-2 second-nav_menu">
       <a href="index.html" class="box-1">
-        <img src="Images/logo.png" class="logo" alt="Logo" />
+        <img src="Images/web-logo.jpg" class="logo" alt="Logo" />
       </a>
 
       <div class="box-2 flex-1">
@@ -167,7 +137,7 @@
               />
               <div class="cart-details">
                 <h2 class="cart-item-name">Product Name</h2>
-                <p class="cart-price">$24.03</p>
+                <p class="cart-price">GHS24.03</p>
                 <input type="number" value="1" class="cart-quantity" />
               </div>
               
@@ -178,11 +148,14 @@
         <!-- Total  Price -->
         <div class="total">
           <h2>Total Price:</h2>
-          <p class="total-price">$0.00</p>
+          <p class="total-price">GHS0.00</p>
         </div>
 
         <!-- Checkout  -->
-        <a class="proceed-checkout-btn" href="checkout.html">Checkout</a>
+
+        <button class="proceed-checkout-btn" onclick="checkoutBtn()">
+          Checkout
+        </button>
       </div>
       <!-- ==================== Cart Section End =================== -->
     </nav>
@@ -378,16 +351,18 @@
                   alt=""
                 />
                 <div class="content">
-                  <h4>No restocking fee ($35 savings)</h4>
+                  <h4>No restocking fee (GHS35 savings)</h4>
                   <h1>M75 Sport Watch</h1>
                   <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Quis obcaecati praesentium aut, reiciendis quidem repellat
-                    rem, itaque eaque magnam dolores ullam.
+                    Discover the latest in wearable technology with the M75
+                    Sport Watch. Designed for fitness enthusiasts and tech
+                    lovers alike, this watch combines style, functionality, and
+                    durability to keep you connected and on track with your
+                    goals.
                   </p>
                   <div class="price flex-1">
                     <span>New Only</span>
-                    <h1>$50.00</h1>
+                    <h1>GHS50.00</h1>
                   </div>
                   <a href="#" class="buy-btn">Buy Now</a>
                 </div>
@@ -405,14 +380,15 @@
                     Get the Best Deal on <br />
                     CCTV Camera
                   </h1>
+
                   <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Quis obcaecati praesentium aut, reiciendis quidem repellat
-                    rem, itaque eaque magnam dolores ullam.
+                    Upgrade your home security with our advanced CCTV cameras.
+                    Enjoy crystal-clear video quality, night vision, and remote
+                    monitoring to keep your property safe and secure.
                   </p>
                   <div class="price flex-1">
                     <span>New Only</span>
-                    <h1>$150.00</h1>
+                    <h1>GHS150.00</h1>
                   </div>
                   <a href="#" class="buy-btn">Buy Now</a>
                 </div>
@@ -429,7 +405,7 @@
               <div class="content">
                 <h4>New line required</h4>
                 <h1>iPhone 12 Pro Max</h1>
-                <h2>$250.00</h2>
+                <h2>GHS3500.00</h2>
               </div>
             </div>
 
@@ -593,7 +569,7 @@
               </div>
               <p>4.0 Review(s)</p>
             </div>
-            <p class="product-price">$30.00</p>
+            <p class="product-price">GHS30.00</p>
             <i class="bi bi-cart4 add-cart"><span>Add Cart</span></i>
           </div>
         </div>
@@ -614,8 +590,8 @@
               <p>4.0 Review(s)</p>
             </div>
             <div class="price">
-              <p class="product-price">$120.00</p>
-              <del>$140.00</del>
+              <p class="product-price">GHS120.00</p>
+              <del>GHS140.00</del>
             </div>
             <i class="bi bi-cart4 add-cart"><span>Add Cart</span></i>
           </div>
@@ -635,7 +611,7 @@
               </div>
               <p>3.7 Review(s)</p>
             </div>
-            <p class="product-price">$59.99</p>
+            <p class="product-price">GHS59.99</p>
             <i class="bi bi-cart4 add-cart"><span>Add Cart</span></i>
           </div>
         </div>
@@ -655,7 +631,7 @@
               </div>
               <p>4.2 Review(s)</p>
             </div>
-            <p class="product-price">$25.00</p>
+            <p class="product-price">GHS25.00</p>
             <i class="bi bi-cart4 add-cart"><span>Add Cart</span></i>
           </div>
         </div>
@@ -675,7 +651,7 @@
               </div>
               <p>4.5 Review(s)</p>
             </div>
-            <p class="product-price">$45.50</p>
+            <p class="product-price">GHS45.50</p>
             <i class="bi bi-cart4 add-cart"><span>Add Cart</span></i>
           </div>
         </div>
@@ -694,7 +670,7 @@
               </div>
               <p>2.6 Review(s)</p>
             </div>
-            <p class="product-price">$15.75</p>
+            <p class="product-price">GHS15.75</p>
             <i class="bi bi-cart4 add-cart"><span>Add Cart</span></i>
           </div>
         </div>
@@ -715,8 +691,8 @@
               <p>5.0 Review(s)</p>
             </div>
             <div class="price">
-              <p class="product-price">$65.25</p>
-              <del>$80.00</del>
+              <p class="product-price">GHS65.25</p>
+              <del>GHS80.00</del>
             </div>
             <i class="bi bi-cart4 add-cart"><span>Add Cart</span></i>
           </div>
@@ -736,7 +712,7 @@
               </div>
               <p>5.0 Review(s)</p>
             </div>
-            <p class="product-price">$250.00</p>
+            <p class="product-price">GHS250.00</p>
             <i class="bi bi-cart4 add-cart"><span>Add Cart</span></i>
           </div>
         </div>
@@ -752,20 +728,23 @@
           <div class="content">
             <h1>Smart Watch 2.0</h1>
             <p>
-              Space Gray Aluminium Case with <br />Black/Volt Real Sports Band
+              Space Gray Aluminium Case with Black/Volt<br />
+              Real Sports Band
             </p>
-            <a href="#">View Details</a>
+            <a href="shop-grid.html">View Details</a>
           </div>
         </div>
         <div class="col-lg col-12 p-0 border banner-box position-relative">
           <img src="Images/Banner/banner-2-bg.jpg" alt="" />
           <div class="content">
             <h1>Smart Headphone 2.0</h1>
+
             <p>
-              Lorem ipsum dolor sit, amet consectetur<br />
-              adipisicing elit. Mollitia, quae?
+              Experience the ultimate sound quality<br />
+              with our latest Smart Headphone 2.0
             </p>
-            <a href="#">View Details</a>
+
+            <a href="shop-grid.html">View Details</a>
           </div>
         </div>
       </div>
@@ -806,7 +785,7 @@
                   </div>
                   <p>4.0 Review(s)</p>
                 </div>
-                <p class="product-price">$120.00</p>
+                <p class="product-price">GHS120.00</p>
                 <i class="bi bi-cart4 add-cart offer-cart-icon"
                   ><span>Add Cart</span></i
                 >
@@ -832,7 +811,7 @@
                   </div>
                   <p>4.0 Review(s)</p>
                 </div>
-                <p class="product-price">$250.00</p>
+                <p class="product-price">GHS250.00</p>
                 <i class="bi bi-cart4 add-cart offer-cart-icon"
                   ><span>Add Cart</span></i
                 >
@@ -859,7 +838,7 @@
                   </div>
                   <p>4.0 Review(s)</p>
                 </div>
-                <p class="product-price">$59.99</p>
+                <p class="product-price">GHS59.99</p>
                 <i class="bi bi-cart4 add-cart offer-cart-icon"
                   ><span>Add Cart</span></i
                 >
@@ -872,11 +851,7 @@
               <img src="Images/Banner/banner-3-bg.jpg" alt="" />
               <div class="content">
                 <h1>Samsung NoteBook 9</h1>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Molestiae, quis?
-                </p>
-                <h2>$450.00</h2>
+                <h2>GHS450.00</h2>
                 <a href="#">Shop Now</a>
               </div>
             </div>
@@ -901,13 +876,15 @@
                 <p>5.0 Review(s)</p>
               </div>
               <div class="price">
-                <h1>$100.00</h1>
-                <del>$200.00</del>
+                <h1>GHS100.00</h1>
+                <del>GHS200.00</del>
               </div>
+
               <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet
-                ad nihil ducimus quam, eos repudiandae.
+                Enjoy premium sound quality and comfort with our Bluetooth
+                Headphone. Perfect for music lovers and professionals alike.
               </p>
+
               <a href="#">Order Now</a>
             </div>
             <div class="offer-box-2-date p-4 border">
@@ -948,21 +925,21 @@
             <img src="Images/Arrival/01.jpg" alt="Arrival Image" />
             <div class="content">
               <a href="#">GoPro Hero 4 Silver</a>
-              <p>$230.00</p>
+              <p>GHS230.00</p>
             </div>
           </div>
           <div class="arrival-cont">
             <img src="Images/Arrival/02.jpg" alt="Arrival Image" />
             <div class="content">
               <a href="#">Pulo Sounds Labs Bt2200</a>
-              <p>$93.57</p>
+              <p>GHS93.57</p>
             </div>
           </div>
           <div class="arrival-cont">
             <img src="Images/Arrival/03.jpg" alt="Arrival Image" />
             <div class="content">
               <a href="#">Hp Office Jet Pro 870</a>
-              <p>$150.00</p>
+              <p>GHS150.00</p>
             </div>
           </div>
         </div>
@@ -976,21 +953,21 @@
             <img src="Images/Arrival/04.jpg" alt="Arrival Image" />
             <div class="content">
               <a href="#">Canon EOS M50 Mirrorless Camera</a>
-              <p>$135.00</p>
+              <p>GHS135.00</p>
             </div>
           </div>
           <div class="arrival-cont">
             <img src="Images/Arrival/05.jpg" alt="Arrival Image" />
             <div class="content">
               <a href="#">iPhone X 256 GB Space Gray</a>
-              <p>$160.00</p>
+              <p>GHS160.00</p>
             </div>
           </div>
           <div class="arrival-cont">
             <img src="Images/Arrival/06.jpg" alt="Arrival Image" />
             <div class="content">
               <a href="#">Microsoft XBox One S</a>
-              <p>$250.00</p>
+              <p>GHS250.00</p>
             </div>
           </div>
         </div>
@@ -1004,21 +981,21 @@
             <img src="Images/Arrival/07.jpg" alt="Arrival Image" />
             <div class="content">
               <a href="#">Samsung Gear 360 VR Camera</a>
-              <p>$89.99</p>
+              <p>GHS89.99</p>
             </div>
           </div>
           <div class="arrival-cont">
             <img src="Images/Arrival/08.jpg" alt="Arrival Image" />
             <div class="content">
               <a href="#">Samsung Galaxy S9+ 64Gb</a>
-              <p>$75.00</p>
+              <p>GHS75.00</p>
             </div>
           </div>
           <div class="arrival-cont">
             <img src="Images/Arrival/09.jpg" alt="Arrival Image" />
             <div class="content">
               <a href="#">Zeus Bluetooth Headphones</a>
-              <p>$30.00</p>
+              <p>GHS30.00</p>
             </div>
           </div>
         </div>
@@ -1078,13 +1055,15 @@
             </div>
             <div class="content">
               <h4>E-commerce</h4>
-              <a href="#">What information is needed for shipping?</a>
+              <a href="blog-single.html"
+                >What information is needed for shipping?</a
+              >
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Voluptatem ducimus similique dolore dolor corporis id alias
-                nostrum in, ab tempore.
+                Shipping information typically includes the recipient's name,
+                address, contact number, and any specific delivery instructions.
+                Ensure accuracy to avoid delays.
               </p>
-              <a href="#" class="learn-more_btn">Learn More</a>
+              <a href="blog-single.html" class="learn-more_btn">Learn More</a>
             </div>
           </div>
         </div>
@@ -1098,13 +1077,15 @@
             </div>
             <div class="content">
               <h4>Gaming</h4>
-              <a href="#">Interest fact about gaming console.</a>
+              <a href="blog-single.html">Interest fact about gaming console.</a>
+
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Voluptatem ducimus similique dolore dolor corporis id alias
-                nostrum in, ab tempore.
+                Gaming consoles have revolutionized the way we experience
+                entertainment, offering immersive graphics, multiplayer
+                capabilities, and exclusive game titles.
               </p>
-              <a href="#" class="learn-more_btn">Learn More</a>
+
+              <a href="blog-single.html" class="learn-more_btn">Learn More</a>
             </div>
           </div>
         </div>
@@ -1118,15 +1099,18 @@
             </div>
             <div class="content">
               <h4>Electronics</h4>
-              <a href="#"
+              <a href="blog-single.html"
                 >Electronics, instrumentation and control engineering</a
               >
+
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Voluptatem ducimus similique dolore dolor corporis id alias
-                nostrum in, ab tempore.
+                Electronics, Instrumentation, and Control Engineering is a
+                multidisciplinary field that combines principles of electronics,
+                control systems, and instrumentation to design and manage
+                complex systems.
               </p>
-              <a href="#" class="learn-more_btn">Learn More</a>
+
+              <a href="blog-single.html" class="learn-more_btn">Learn More</a>
             </div>
           </div>
         </div>
@@ -1140,7 +1124,7 @@
         <div class="col-lg col-md-5 col-12 ms-auto m-4 our-plans-box">
           <i class="bi bi-truck"></i>
           <h1>Free Shipping</h1>
-          <p>On order over $200</p>
+          <p>On order over GHS200</p>
         </div>
         <div class="col-lg col-md-5 col-12 ms-auto m-4 our-plans-box">
           <i class="bi bi-chat-right-text"></i>
@@ -1197,10 +1181,10 @@
               <h1>Get in touch with us</h1>
               <span class="bar-3"></span>
             </div>
-            <p>Phone: +1 123 456 7897</p>
+            <p>Phone: (+233) 549 175 604</p>
             <p>Monday-Friday: 9:00am - 5:00pm</p>
             <p>Saturday: 9:00am - 3:00pm</p>
-            <p>ike_shop@email.com</p>
+            <p>isaacskikrams@gmail.com</p>
           </div>
 
           <div class="second-footer-box" style="width: 300px">
@@ -1255,15 +1239,35 @@
           </div>
           <div class="box-2 text-center">
             <p>Designed and Developed by:</p>
-            <a href="#">Isaacski CompuTech</a>
+            <a href="#">Isaacski Krams</a>
           </div>
           <div class="box-3">
             <p>Follow us on:</p>
             <div class="social-handles-2">
-              <a href="#" title="Facebook"><i class="bi bi-facebook"></i></a>
-              <a href="#" title="Linkedin"><i class="bi bi-linkedin"></i></a>
-              <a href="#" title="YouTube"><i class="bi bi-youtube"></i></a>
-              <a href="#" title="Github"><i class="bi bi-github"></i></a>
+              <a
+                href="https://www.facebook.com/isaacski.krams.3"
+                target="_blank"
+                title="Facebook"
+                ><i class="bi bi-facebook"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/isaacski.2001"
+                target="_blank"
+                title="Linkedin"
+                ><i class="bi bi-linkedin"></i
+              ></a>
+              <a
+                href="https://www.youtube.com/Isaacski"
+                target="_blank"
+                title="YouTube"
+                ><i class="bi bi-youtube"></i
+              ></a>
+              <a
+                href="https://www.github.com/Isaacski1"
+                target="_blank"
+                title="Github"
+                ><i class="bi bi-github"></i
+              ></a>
             </div>
           </div>
         </div>
@@ -1287,5 +1291,9 @@
     <!-- ============== Script JS Link ============= -->
     <script src="./JS/script.js"></script>
     <script src="./JS/checkout.js"></script>
+    <script src="./JS/signup.js"></script>
+    <script src="./JS/login.js"></script>
+    <!-- =============== Authentication Link ============ -->
+    <script src="./JS/authentication.js"></script>
   </body>
 </html>
